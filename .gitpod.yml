@@ -3,7 +3,7 @@ tasks:
   - init: yarn install
     command: . ./setup.sh && npm run dev
 ports:
-  - port: 3000
+  - port: 8888
     onOpen: open-browser
 github:
   prebuilds:
