@@ -1,0 +1,30 @@
+name: BattleStax Tests
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  battlestax-tests:
+    env:
+      ASTRA_DB_USERNAME: ${{ secrets.ASTRA_DB_USERNAME }}
+      ASTRA_DB_PASSWORD: ${{ secrets.ASTRA_DB_PASSWORD }}
+      ASTRA_DB_KEYSPACE: ${{ secrets.ASTRA_DB_KEYSPACE }}
+      ASTRA_DB_ID: ${{ secrets.ASTRA_DB_ID }}
+      ASTRA_DB_REGION: ${{ secrets.ASTRA_DB_REGION }}
+      GAMES_COLLECTION: ${{ secrets.GAMES_COLLECTION }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
+      - name: client tests
+        run: npm run test
