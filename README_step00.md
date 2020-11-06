@@ -31,16 +31,16 @@ This might seem like an odd step, but will allow you to keep your place in the i
 
 Just scroll up on the **GitHub** repo page and **`ctrl/cmd/middle`** click on the **`battlestax`** repo name to launch it in a new tab.
 
-![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
+> ![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
 
 **✅ Step 1b. Create repository from the provided template**
 From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
 
-![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
+> ![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
 
 Then, on the **Create a new repository from battlestax** page you are presented with fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
 
-![Template create repo](./tutorial/template-create-repo.png?raw=true)
+> ![Template create repo](./tutorial/template-create-repo.png?raw=true)
 
 It should only take a moment for **GitHub** to generate a new repository in your account.
 
@@ -48,9 +48,9 @@ It should only take a moment for **GitHub** to generate a new repository in your
 
 Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on with creating your **Astra** instance.
 
-![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)
+> ![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)
 
-![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)
+> ![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)
 
 [🏠 <--Back to the top](#table-of-contents)
 
