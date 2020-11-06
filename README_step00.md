@@ -153,18 +153,38 @@ Do things with an IDE and stuff
 
 [🏠 <--Back to the top](#table-of-contents)
 ## 4. Setup Netlify account
-Placeholder text
 
-|
+**✅ Step 4a. Setup a Netlify account**
 
-|
+Using the link [HERE](https://www.netlify.com), sign up for a new account and follow **Netlify's** instructions to create a **`New Site from Git`** (_you must be logged in to see this option_).
 
-|
+Connect it to **YOUR** BattleStax copy on the master branch (_connection takes a couple of steps_).
 
-|
+**✅ Step 4b. Create a new site**
 
-|
+Use all of the defaults for `Basic Build Settings` (_ie. the build command and build directory_).
 
+Click **`Advanced`**, and add your environment variables. You will need to add a variable for each of...
+```
+ASTRA_DB_USERNAME=battle_user
+ASTRA_DB_PASSWORD=battle_password1
+ASTRA_DB_KEYSPACE=battlestax
+ASTRA_DB_ID=PLACEHOLDER<--NEEDS INSTRUCTION
+ASTRA_DB_REGION=PLACEHOLDER<--NEEDS INSTRUCTION
+GAMES_COLLECTION=games
+```
+
+![Netlify Setup Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_setup.png)
+
+**✅ Step 4b. Deploy your site** 
+
+Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**. 
+
+![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)
+
+Finally, wait for deployment! 
+
+When your new site is ready, you will be able to go to: `<your_url>.netlify.app` to see your game.
 
 [🏠 <--Back to the top](#table-of-contents)
 ## 5. Setup for Production CI/CD
