@@ -1,12 +1,29 @@
-## BattleStax 
+## 🎓🔥 The BattleStax Workshop 🔥🎓 
 
 BattleStax is a stateful JAMStack game that is wholesome fun for the entire crew.
 
-[![Actions Status](https://github.com/DataStax-Academy/battlestax/workflows/BattleStax%20Tests/badge.svg)](https://github.com/DataStax-Academy/battlestax/actions) 
 
+[![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
+[![Actions Status](https://github.com/DataStax-Academy/battlestax/workflows/BattleStax%20Tests/badge.svg)](https://github.com/DataStax-Academy/battlestax/actions) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e265340f-c6a6-4d7b-b24c-438b87c67876/deploy-status)](https://app.netlify.com/sites/battlestax-tutorial/deploys)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Academy/battlestax)
+![BattleStax JAMStack Workshop](./tutorial/battlestax.png)
+
+Welcome to **BattleStax**, a [JAMStack](https://jamstack.org/) game that uses [Netlify](https://www.netlify.com/jamstack/), [DataStax Astra](https://dtsx.io/workshop), and [GitHub](https://github.com/) to demonstrate how to build and deploy an application using modern, scalable architectures. In this 3 hour workshop you will create your own **BattleStax** game using [React](https://reactjs.org/) and [Redux](https://redux.js.org/) implemented with a CI/CD pipeline, global CDN network, and [Apache Cassandra](https://cassandra.apache.org/) all using **FREE** tech.
+
+It doesn't matter if you join our workshop live or you prefer to do at your own pace, we have you covered. In this repository, you'll find everything you need for this workshop:
+
+- Materials used during presentations
+- Hands-on exercises
+- Workshop videos
+  - [First workshop](???) [NAM Time]
+  - [Second workshop](???) [IST Time]
+- [Discord chat](https://bit.ly/cassandra-workshop)
+- [Questions and Answers](https://community.datastax.com/)
+
+### Learning Objectives
+What are you here to learn yo?!
 
 ### Project Structure
 
@@ -17,75 +34,34 @@ BattleStax's folder structure is (mostly) generated from [Create React App](http
 - functions - [Netlify Functions](https://www.netlify.com/products/functions/) Lambda function definition
 - public - Static files
 - src - [create-react-app](https://github.com/facebook/create-react-app) source files
-- tutorial - tutorial content
 
 ### Prerequisites
+
 -  A Github account - [Github](https://github.com)
 -  A fork of the `BattleStax Tutorial` repository - [Repository](https://github.com/kidrecursive/battlestax-tutorial)
--  NodeJS 12 - [Download](https://nodejs.org/en/download/) - Recommended alternative: Setup your local development environment with [nodeenv](#nodeenv)
+- Environment (choose one)
+    - **GitPod:** A free, cloud based IDE in **GitHub** which we preconfigure for you (seriously, this is cool)
+    - **Local:** NodeJS 12 - [Download](https://nodejs.org/en/download/) - Recommended alternative: Setup your local development environment with [nodeenv](#nodeenv)
 -  A Netlify account (it's free!) - [Netlify](https://www.netlify.com)
--  An Astra account and database (it's free!) - [Astra](https://astra.datastax.com/)
+-  An Astra account and database (it's free!) - [Astra](https://dtsx.io/workshop)
 
-### Using `nodeenv` (recommended)
+To get started, use the table of contents and start with **`00. Setup environment and tools`** listed below. You **MUST** complete this step in order to get your enviroment configured for the rest of the workshop. Once that is complete you are free to start from any other step.
 
-Using [nodeenv](https://github.com/ekalinin/nodeenv) allows you to keep your NodeJS version and dependencies isolated for the project you're 
-working on. To get started using it for BattleStax, install it using [homebrew](https://formulae.brew.sh/formula/nodeenv) or `easy_install`.
-```sh
-# install using homebrew
-brew install nodeenv
+## Table of Contents
 
-# install using easy_install
-sudo easy_install nodeenv
-```
-
-Once nodeenv is installed, setup a virtualenv in the project folder, and then activate it.
-
-```sh
-# setup a nodeenv in the venv folder using NodeJS 12
-nodeenv venv --node=12.18.4
-
-# activate the nodeenv
-. venv/bin/activate
-```
-
-### Working with BattleStax
-
-Create a `.env` file and fill it with values from the `.env.example` file.
-
-Make sure the package dependencies are installed
-```sh
-# install dependencies
-npm install
-```
-
-Then, start the app in dev mode. Changes in the `src` or `functions` directories will trigger reloads.
-
-```sh
-# start battlestax in dev mode
-npm run dev
-```
-
-### UI Storybook
-
-To run storybook, make sure you have some {ComponentName}.stories.js files and then:
-
-```sh
-# start storybook
-npm run storybook
-```
-
-### Client Testing
-
-Test your react/redux client 
-```sh
-# run the client tests
-npm test
-```
-
-### Netlify Function Testing
-
-Test your netlify functions 
-```sh
-# run the function tests
-npm run test:functions
-```
+| Title  | Description
+|---|---|
+| **00. Setup environment and tools** | 🔥 [Setup environment and tools](./README_step00.md)🔥 |
+| **01. Create a REST API** | [Create a REST API](./README_step01.md) |
+| **02. Connect your Astra database** | [Connect your Astra database](./README_step02.md) |
+| **03. Write a function to use REST** | [Write a function to use REST](./README_step03.md) |
+| **04. Test your REST function** | [Test your REST function](./README_step04.md) |
+| **05. Client state with Redux** | [Client state with Redux](./README_step05.md) |
+| **06. Build a slice** | [Build a slice](./README_step06.md) |
+| **07. Test your slice** | [Test your slice](./README_step07.md) |
+| **08. Create a UI component with React** | [Create a UI component with React](./README_step07.md) |
+| **09. Create a storybook** | [Create a storybook](./README_step08.md) |
+| **10. Test a React component** | [Test a React component](./README_step09.md) |
+| **11. Add a hook** | [Add a hook](./README_step10.md) |
+| **12. Deploy your completed application** | [Deploy your completed application](./README_step12.md) |
+| **12. Challenge your friends to a game** | [Challenge your friends to a game](./README_step13.md) |
