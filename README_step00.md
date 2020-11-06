@@ -13,15 +13,44 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 | Title  | Description
 |---|---|
-| **1. Fork the BattleStax repo** | [Fork the BattleStax repo](#1-fork-the-battleStax-repo) |
-| **2. Create your Astra instance** | [Create your Astra instance](#2-create-your-astra-instance) |
+| **1. Copy the BattleStax repository** | [Copy the BattleStax repository](#1-fork-the-battleStax-repo) |
+| **2. Create your Astra instance** | [Create your Astra instance](#2-copy-the-battlestax-repository) |
 | **3. Configure your IDE** | [Configure your IDE](#3-configure-your-ide)
 | **4. Setup Netlify account** | [Setup Netlify account](#4-setup-netlify-account)
 | **5. Setup for Production CI/CD** | [Setup for Production CI/CD](#5-setup-for-production-ci/cd)
 
 
-## 1. Fork the BattleStax repo
-Placeholder text
+## 1. Copy the BattleStax repository
+The very first thing we want to do is create a copy of the BattleStax repository into **YOUR** GitHub account. 
+
+This is important because as part of this workshop you will deploy the BattleStax application to production and will need your own repository to do so. The good thing is we've made this easy for you by creating a template you can use to quickly copy the repo.
+
+**✅ Step 1a. Launch the BattleStax repo into another tab**
+
+This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
+
+Just scroll up on the **GitHub** repo page and **`ctrl/cmd/middle`** click on the **`battlestax`** repo name to launch it in a new tab.
+
+![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
+
+**✅ Step 1b. Create repository from the provided template**
+From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
+
+![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
+
+Then, on the **Create a new repository from battlestax** page you are presented with fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
+
+![Template create repo](./tutorial/template-create-repo.png?raw=true)
+
+It should only take a moment for **GitHub** to generate a new repository in your account.
+
+**✅ Step 1c. Navigate back to your place in the docs**
+
+Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on with creating your **Astra** instance.
+
+![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)
+
+![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)
 
 [🏠 <--Back to the top](#table-of-contents)
 
