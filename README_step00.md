@@ -29,7 +29,7 @@ This is important because as part of this workshop you will deploy the BattleSta
 
 This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
 
-Just scroll up on the **GitHub** repo page and **`ctrl/cmd/middle`** click on the **`battlestax`** repo name to launch it in a new tab.
+Just scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
 
 > ![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
 
