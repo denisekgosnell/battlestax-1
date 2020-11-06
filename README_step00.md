@@ -38,7 +38,7 @@ From the new tab you just launched, click on the **`Use this template`** button 
 
 > ![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
 
-Then, on the **Create a new repository from battlestax** page you are presented with fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
+Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
 
 > ![Template create repo](./tutorial/template-create-repo.png?raw=true)
 
