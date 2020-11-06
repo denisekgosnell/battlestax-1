@@ -17,7 +17,7 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 | **2. Create your Astra instance** | [Create your Astra instance](#2-copy-the-battlestax-repository) |
 | **3. Configure your IDE** | [Configure your IDE](#3-configure-your-ide)
 | **4. Setup Netlify account** | [Setup Netlify account](#4-setup-netlify-account)
-| **5. Setup for Production CI/CD** | [Setup for Production CI/CD](#5-setup-for-production-ci/cd)
+| **5. Setup for Production CI/CD** | [Setup for Production CI/CD](#5-setup-for-production-cicd)
 
 
 ## 1. Copy the BattleStax repository
