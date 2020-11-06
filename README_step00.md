@@ -188,18 +188,42 @@ When your new site is ready, you will be able to go to: `<your_url>.netlify.app`
 
 [🏠 <--Back to the top](#table-of-contents)
 ## 5. Setup for Production CI/CD
-Placeholder text
+Every application should really have a CI/CD pipeline. This allows for quick iteration of changes to production deployment by taking advantage of automation and tests to ensure everything is working properly. The good thing is many CI/CD tools are provided right within **GitHub**.
 
-|
+Adding this capabiity just takes a couple steps.
 
-|
+**✅ Step 5a. Add secret variables** 
 
-|
+Remember those variables we set when we configured **Netlify**? We need to add these same variables to our **GitHub** repository.
 
-|
+Within **YOUR** battlestax repository click on **`Settings`** in the top toolbar, choose **`Secrets`** from the menu on the left, and finally click the **`New secret`** button on the top right of the page. Add a secret for each of the variables we used earlier.
+```
+ASTRA_DB_USERNAME=battle_user
+ASTRA_DB_PASSWORD=battle_password1
+ASTRA_DB_KEYSPACE=battlestax
+ASTRA_DB_ID=PLACEHOLDER<--NEEDS INSTRUCTION
+ASTRA_DB_REGION=PLACEHOLDER<--NEEDS INSTRUCTION
+GAMES_COLLECTION=games
+```
 
-|
+![secret keys in github](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/github_secrets.png)
 
+**✅ Step 5b. Test out an application build**
+
+On your local machine, create a new branch and issue an empty commit, then push it to your fork.
+
+📘 **Commands to execute**
+
+```
+git checkout -b test_pr
+git commit --allow-empty -m "New branch to test ci/cd"
+git push origin test_pr
+```
+From the Github UI, open a PR for `test_pr` into `master`. PLACEHOLDER<--NEEDS INSTRUCTION
+
+Observe the tests passing. PLACEHOLDER<--NEEDS INSTRUCTION
+
+Merge the PR, observe the site deploying. PLACEHOLDER<--NEEDS INSTRUCTION
 
 [🏠 <--Back to the top](#table-of-contents)
 
