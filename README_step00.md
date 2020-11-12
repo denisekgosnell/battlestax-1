@@ -13,11 +13,11 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 | Title  | Description
 |---|---|
-| [**1. Create your BattleStax repository from template**](#1-fork-the-battleStax-repo) | Github allows the creation of personal repositories through the buttton `[Use this Template]` on existing repository. |
-| **2. Create your Astra instance** | [Create your Astra instance](#2-copy-the-battlestax-repository) |
-| **3. Configure your IDE** | [Configure your IDE](#3-configure-your-ide)
-| **4. Setup Netlify account** | [Setup Netlify account](#4-setup-netlify-account)
-| **5. Setup for Production CI/CD** | [Setup for Production CI/CD](#5-setup-for-production-cicd)
+| [**1. Create your BattleStax repository from template**](1-create-your-battlestax-repository) | Github allows the creation of personal repositories through the buttton `[Use this Template]` on existing repository. |
+| [**2. Create your Astra instance**](#2-copy-the-battlestax-repository) | You don't have to install any database we have you covered, you will spawn a Cloud Database for free. |
+| [**3. Setup Netlify account**](#3-setup-netlify-account) | **JAMStack** powa, your static content is deployed on Netlify platform |
+| [**4. Setup for Production CI/CD**](#4-setup-for-production-cicd) | With a bit of configuration any new commit in github will redeploy your code on netlify
+| [**5. Configure your IDE**](#5-configure-your-ide) | You can do the workshop on your machine with somne prerequisites or in the cloud with a pre-defined VSCode setup for you.|
 
 
 ## 1. Create your `BattleStax` repository
@@ -201,12 +201,12 @@ When your new site is ready, you will be able to go to: `<your_url>.netlify.app`
 
 [🏠 <--Back to the top](#table-of-contents)
 
-## 5. Setup for Production CI/CD
+## 4. Setup for Production CI/CD
 Every application should really have a CI/CD pipeline. This allows for quick iteration of changes to production deployment by taking advantage of automation and tests to ensure everything is working properly. The good thing is many CI/CD tools are provided right within **GitHub**.
 
 Adding this capabiity just takes a couple steps.
 
-**✅ Step 5a. Add secret variables** 
+**✅ Step 4a. Add secret variables** 
 
 Remember those variables we set when we configured **Netlify**? We need to add these same variables to our **GitHub** repository.
 
@@ -222,7 +222,7 @@ GAMES_COLLECTION=games
 
 ![secret keys in github](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/github_secrets.png)
 
-**✅ Step 5b. Test out an application build**
+**✅ Step 4b. Test out an application build**
 
 On your local machine, create a new branch and issue an empty commit, then push it to your fork.
 
@@ -247,7 +247,7 @@ Ok, great. You should be all setup and ready to start coding against your app.
 
 [Go to Create a REST API -->](./README_step01.md)
 
-## 6. Configure your IDE
+## 5. Configure your IDE
 Do things with an IDE and stuff
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Academy/battlestax)
