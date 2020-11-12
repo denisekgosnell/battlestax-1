@@ -196,21 +196,43 @@ Click **`Deploy Site`** and once deployed copy the domain name of your new site 
 
 Finally, wait for deployment! 
 
+![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)
+
 When your new site is ready, you will be able to go to: `<your_url>.netlify.app` to see your game.
 
+![Netlify Setup Example](./tutorial/netlify-createsite-8.png?raw=true)
+
+If you start new games it will create a new record in the database. If you want to validate this behavirour click on `START NEW GAME`
+
+- Open Astra UI, show the CQLCONSOLE and execute the following command (here *battlestax* is your keyspace and *games* your collection name - if you chose another names adapt the query accordingly).
+
+📘 **Commands to execute**
+
+```
+select key,text_value from battlestax.games;
+```
+
+- You should have a result that looks like 
+
+![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)
 
 [🏠 <--Back to the top](#table-of-contents)
 
 ## 4. Setup for Production CI/CD
-Every application should really have a CI/CD pipeline. This allows for quick iteration of changes to production deployment by taking advantage of automation and tests to ensure everything is working properly. The good thing is many CI/CD tools are provided right within **GitHub**.
 
-Adding this capabiity just takes a couple steps.
+Every application should have a CI/CD *(**C**ontinous **I**ntegration, **C**ontinuous **D**eployment)* pipeline. This allows for quick iteration of changes to production deployment by taking advantage of automation and tests to ensure everything is working properly. 
+
+After each commit a workshow is initialized to BUILD your project, EXECUTE tests and DEPLOY to netlify. 
+
+The good thing is many CI/CD tools are provided right within **GitHub**. Adding this capabiity just takes a couple steps.
 
 **✅ Step 4a. Add secret variables** 
 
 Remember those variables we set when we configured **Netlify**? We need to add these same variables to our **GitHub** repository.
 
-Within **YOUR** battlestax repository click on **`Settings`** in the top toolbar, choose **`Secrets`** from the menu on the left, and finally click the **`New secret`** button on the top right of the page. Add a secret for each of the variables we used earlier.
+Within **YOUR** Battlestax repository click on **`Settings`** in the top toolbar, choose **`Secrets`** from the menu on the left, and finally click the **`New secret`** button on the top right of the page. Add a secret for each of the variables we used earlier. [GO](/settings/secrets/actions/new)
+
+You notice that those are the same as used by netlify. Github will populate them at deploy time.
 ```
 ASTRA_DB_USERNAME=battle_user
 ASTRA_DB_PASSWORD=battle_password1
@@ -220,7 +242,10 @@ ASTRA_DB_REGION=PLACEHOLDER<--NEEDS INSTRUCTION
 GAMES_COLLECTION=games
 ```
 
-![secret keys in github](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/github_secrets.png)
+- That should look like :
+
+![Netlify Setup Example](./tutorial/setup-github-1.png?raw=true)
+
 
 **✅ Step 4b. Test out an application build**
 
@@ -228,12 +253,33 @@ On your local machine, create a new branch and issue an empty commit, then push 
 
 📘 **Commands to execute**
 
-```
+```bash
 git checkout -b test_pr
 git commit --allow-empty -m "New branch to test ci/cd"
 git push origin test_pr
 ```
-From the Github UI, open a PR for `test_pr` into `master`. PLACEHOLDER<--NEEDS INSTRUCTION
+
+- Select your new branch in github
+
+![Netlify Setup Example](./tutorial/setup-github-2.png?raw=true)
+
+- From the Github UI, open a PR but click and `Compare & Pull request` button. for `test_pr` into `master`. Caution don't target the original master from DataStax-Academy but **YOUR** master
+
+
+![Netlify Setup Example](./tutorial/setup-github-3.png?raw=true)
+
+![Netlify Setup Example](./tutorial/setup-github-4.png?raw=true)
+
+![Netlify Setup Example](./tutorial/setup-github-5.png?raw=true)
+
+![Netlify Setup Example](./tutorial/setup-github-6.png?raw=true)
+
+![Netlify Setup Example](./tutorial/setup-github-7.png?raw=true)
+
+![Netlify Setup Example](./tutorial/setup-github-8.png?raw=true)
+
+![Netlify Setup Example](./tutorial/setup-github-9.png?raw=true)
+
 
 Observe the tests passing. PLACEHOLDER<--NEEDS INSTRUCTION
 
