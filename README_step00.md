@@ -8,7 +8,7 @@
 
 This is arguably the biggest step in the whole workshop. Once you get your tools and environment setup you'll be good to go, not just for this workshop, but for your own **JAMStack** applications moving forward. Just repeat the process for your own application repositories.
 
-> ![Template CTRL click](./tutorial/tools.png?raw=true)
+![Template CTRL click](./tutorial/tools.png?raw=true)
 
 ## 🗓️ Table of Contents
 
@@ -44,24 +44,23 @@ The very first thing we want to do is create a copy of the BattleStax repository
 This is important because as part of this workshop you will deploy the BattleStax application to production and will need your own repository to do so. The good thing is we've made this easy for you by creating a template you can use to quickly copy the repo.
 
 |**✅ Step 1a. Launch the BattleStax repo into another tab**|
-|---|
+|:---|
 |This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
 
-Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
+<br>Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
 
-> ![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
+<br>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
 
-**✅ Step 1b. Create repository from the provided template**
 
-From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
+|**✅ Step 1b. Create repository from the provided template**|
+|:---|
+|From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
+<br>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
+<br>Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
 
-> ![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
+<br>![Template create repo](./tutorial/template-create-repo.png?raw=true)
 
-Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
-
-> ![Template create repo](./tutorial/template-create-repo.png?raw=true)
-
-It should only take a moment for **GitHub** to generate a new repository in your account.|
+<br>It should only take a moment for **GitHub** to generate a new repository in your account.|
 
 **✅ Step 1c. Navigate back to your place in the docs**
 
