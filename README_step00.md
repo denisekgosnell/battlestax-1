@@ -48,13 +48,13 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 |**✅ Step 1b. Create repository from the provided template**|
 |:---|
-|From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.<br/>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)<br/>Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.<br/>![Template create repo](./tutorial/template-create-repo.png?raw=true)<br/>It should only take a moment for **GitHub** to generate a new repository in your account.|
+|<br/>From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.<br/><br/>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)<br/>- On the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.<br/><br/>![Template create repo](./tutorial/template-create-repo.png?raw=true)<br/>It should only take a moment for **GitHub** to generate a new repository in your account.|
 
 |**✅ Step 1c. Navigate back to your place in the docs**|
 |:---|
-|Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)<br/>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)<br>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)|
+|<br/>Once completed you will land in the root of your new repository.<br/><br/>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)<br/>From there, navigate back to your place in the ocumentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)<br><br/>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)|
 
-[🔝 <--Back to the top](#table-of-contents)
+## [🔝](#table-of-contents)
 
 ## 2. Create your Astra instance
 
@@ -62,68 +62,33 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 |**✅ Step 2a. Register (if needed) and Sign In to Astra** :|
 |:---|
-|You can use your `Github`, `Google` accounts or register with an `email`.
-<br/>Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character<br/>[Registration Page](https://dtsx.io/workshop)<br/>![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)<br/>[Authentication Page](https://dtsx.io/workshop)<br/>![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)|
+|<br/>You can use your `Github`, `Google` accounts or register with an `email`.<br/>Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character<br/><br/>[Registration Page](https://dtsx.io/workshop)<br/>![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)<br/><br/>[Authentication Page](https://dtsx.io/workshop)<br/>![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)|
 
 |**✅ Step 2b. Choose the free plan and select your region**|
 |:---|
-|![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)<br/>- **Select the free tier**: 5GB storage, no obligation<br/>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
+|<br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)<br/>- **Select the free tier**: 5GB storage, no obligation<br/>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
 
-**✅ Step 2c. Configure and create your database**
+|**✅ Step 2c. Configure and create your database**|
+|:---|
+|<br/>You will find below which values to enter for each field.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/create-and-configure-annotated-1000.png?raw=true)
+<br/>- **Fill in the database name** - `battlestax_db.` While Astra allows you to fill in these fields with values of your own choosing, please follow our reccomendations to make the rest of the exercises easier to follow. If you don't, you are on your own! :)<br/>- **Fill in the keyspace name** - `battlestax`. It's really important that you use the name sa_index here in order for all the exercises to work well. We realize you want to be creative, but please just roll with this one today.<br/>- **Fill in the Database User name** - `battle_user`. Note the user name is case-sensitive. Please use the case we suggest here.<br/>- **Fill in the password** - `battle_password1`. Fill in both the password and the confirmation fields. Note that the password is also case-sensitive. Please use the case we suggest here.<br/>- **Create the database**. Review all the fields to make sure they are as shown, and click the **`Create Database`** button.<br/><br/>You will see your new database `Pending` in the Dashboard.<br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000.png?raw=true)<br/><br/>The status will change to `Active` when the database is ready, this will only take 2-3 minutes. You will also receive an email when it is ready.|
 
-You will find below which values to enter for each field.
+|**✅ Step 2d. Create a service account**|
+|:---|
+|<br/>The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.<br/><br/>Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)<br/><br/>Create a service account by clicking **`Add Service Account`** button above the section as shown below.
+<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)<br/><br/>When the panel opens on the right, click **`Add`**. <br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)|
 
-> ![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/create-and-configure-annotated-1000.png?raw=true)
-
-- **Fill in the database name** - `battlestax_db.` While Astra allows you to fill in these fields with values of your own choosing, please follow our reccomendations to make the rest of the exercises easier to follow. If you don't, you are on your own! :)
-
-- **Fill in the keyspace name** - `battlestax`. It's really important that you use the name sa_index here in order for all the exercises to work well. We realize you want to be creative, but please just roll with this one today.
-
-- **Fill in the Database User name** - `battle_user`. Note the user name is case-sensitive. Please use the case we suggest here.
-
-- **Fill in the password** - `battle_password1`. Fill in both the password and the confirmation fields. Note that the password is also case-sensitive. Please use the case we suggest here.
-
-- **Create the database**. Review all the fields to make sure they are as shown, and click the **`Create Database`** button.
-
-You will see your new database `Pending` in the Dashboard.
-
-> ![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000.png?raw=true)
-
-The status will change to `Active` when the database is ready, this will only take 2-3 minutes. You will also receive an email when it is ready.
-
-**✅ Step 2d. Create a service account**
-
-The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.
-
-Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.
-
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)
-
-Create a service account by clicking **`Add Service Account`** button above the section as shown below.
-
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)
-
-When the panel opens on the right, click **`Add`**. 
-
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)
-
-**✅ Step 2e. Copy credentials to your clipboard**
-
-Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**
-
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)
-
-The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.
-
-```json
+|**✅ Step 2e. Copy credentials to your clipboard**|
+|:---|
+|<br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/><br/>The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.<br/>```json
 {
   "clientId":"149de2c7-9b07-41b3-91ad-9453dee4dc54",
   "clientName":"cedrick.lunven@datastax.com",
   "clientSecret":"aaaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
 }
 ```
+<br/>_Note: You can always comes back to the Astra UI later and copy your service account credentials at any time._|
 
-_Note: You can always comes back to the Astra UI later and copy your service account credentials at any time._
 
 [🏠 <--Back to the top](#table-of-contents)
 
