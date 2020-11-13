@@ -251,7 +251,7 @@ GAMES_COLLECTION=games
 
 **✅ Step 4b. Test out an application build**
 
-|Using `git`, create a new branch and issue an empty commit, then push it to your repository.|
+|✔️ Using `git`, create a new branch and issue an empty commit, then push it to your repository.|
 |---|
 
 <details><summary><i>Click to view the solution</i></summary>
@@ -266,7 +266,7 @@ git push origin test_pr
 </p>
 </details>
 
-|Using the Github UI, merge your new branch to the master through a pull request|
+|✔️ Using `Github UI`, merge your new branch to the master through a pull request|
 |---|
 
 <details><summary><i>Click to view the step-by-step solution</i></summary>
@@ -297,10 +297,10 @@ Collapse avec les details
 </p>
 </details>
 
-|Go back netlify and see the ci/cd process with first tests and then deployment|
+|✔️ Browsing `Netlify`, see the ci/cd process rolling wuth tests deployment|
 |---|
 
-<details><summary><i>Click to view the step-by-step solution</i></summary>
+<details><summary><i>Click to view step-by-step and screenshots</i></summary>
 <p>
 <.>
 </p>
