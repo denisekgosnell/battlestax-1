@@ -98,7 +98,7 @@ The credentials you copied to the clipboard look like the following JSON, we wil
 |**✅ Step 3c. Deploy your site**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.<br/>![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)<br/><br/>Finally, wait for deployment!<br/>![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)<br/><br/>When your new site is ready, you will be able to go to: `<your_url>.netlify.app` to see your game.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-8.png?raw=true)<br/><br/>If you start new games it will create a new record in the database. If you want to validate this behavirour click on `START NEW GAME`<br/><br/>Open Astra UI, show the CQLCONSOLE and execute the following command (here *battlestax* is your keyspace and *games* your collection name - if you chose another names adapt the query accordingly).<br/><br/>📘 **Commands to execute**<br/>```sql<br/>select key,text_value from battlestax.games;<br/>```<br/><br/>You should have a result that looks like <br/>![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)|
+|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.<br/>![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)<br/><br/>Finally, wait for deployment!<br/>![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)<br/><br/>When your new site is ready, you will be able to go to: `<your_url>.netlify.app` to see your game.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-8.png?raw=true)<br/><br/>If you start new games it will create a new record in the database. If you want to validate this behavirour click on `START NEW GAME`<br/><br/>Open Astra UI, show the CQLCONSOLE and execute the following command (here *battlestax* is your keyspace and *games* your collection name - if you chose another names adapt the query accordingly).<br/><br/>📘 **Commands to execute**<br/>`select key,text_value from battlestax.games;`<br/><br/>You should have a result that looks like <br/>![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)|
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
@@ -111,25 +111,11 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 
 The good thing is many CI/CD tools are provided right within **GitHub**. Adding this capabiity just takes a couple steps.
 
-**✅ Step 4a. Add secret variables** 
-
-Remember those variables we set when we configured **Netlify**? We need to add these same variables to our **GitHub** repository.
-
-Within **YOUR** Battlestax repository click on **`Settings`** in the top toolbar, choose **`Secrets`** from the menu on the left, and finally click the **`New secret`** button on the top right of the page. Add a secret for each of the variables we used earlier. [GO](/settings/secrets/actions/new)
-
-You notice that those are the same as used by netlify. Github will populate them at deploy time.
-```
-ASTRA_DB_USERNAME=battle_user
-ASTRA_DB_PASSWORD=battle_password1
-ASTRA_DB_KEYSPACE=battlestax
-ASTRA_DB_ID=PLACEHOLDER<--NEEDS INSTRUCTION
-ASTRA_DB_REGION=PLACEHOLDER<--NEEDS INSTRUCTION
-GAMES_COLLECTION=games
-```
-
-- That should look like :
-
-![Netlify Setup Example](./tutorial/setup-github-1.png?raw=true)
+|**✅ Step 4a. Add secret variables**|
+|:---|
+||
+|<br/>Remember those variables when we configured **Netlify**? We need to add these same to our **GitHub** repository.<br/><br/>Within **YOUR** Battlestax repository click on **`Settings`** in the top toolbar, choose **`Secrets`** from the menu on the left, and finally click the **`New secret`** button on the top right of the page. Add a secret for each of the variables we used earlier.<br/><br/>You notice that those are the same as used by netlify. Github will populate them at deploy time.<br/>
+`ASTRA_DB_USERNAME=battle_user`<br/>`ASTRA_DB_PASSWORD=battle_password1`<br/>`ASTRA_DB_KEYSPACE=battlestax`<br/>`ASTRA_DB_ID=[check Step3b]`<br/>`ASTRA_DB_REGION=[check Step3b]`<br/>`GAMES_COLLECTION=games`<br/><br/>- That should look like :![Netlify Setup Example](./tutorial/setup-github-1.png?raw=true)|
 
 
 **✅ Step 4b. Test out an application build**
