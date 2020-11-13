@@ -39,13 +39,11 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 ## 1. Create your `BattleStax` repository
 
-The very first thing we want to do is create a copy of the BattleStax repository into **YOUR** GitHub account. 
+*The very first thing we want to do is create a copy of the BattleStax repository into **YOUR** GitHub account. This is important because as part of this workshop you will deploy the BattleStax application to production and will need your own repository to do so. The good thing is we've made this easy for you by creating a template you can use to quickly copy the repo.*
 
-This is important because as part of this workshop you will deploy the BattleStax application to production and will need your own repository to do so. The good thing is we've made this easy for you by creating a template you can use to quickly copy the repo.
-
-|**✅ Step 1a. Launch the BattleStax repo into another tab**|
+|**✅ Step 1a. `Launch the BattleStax repo into another tab`**|
 |:---|
-|This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.<br/>Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.<br/>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
+|<br/>This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo. Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab:<br/><br/>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)|
 
 
 |**✅ Step 1b. Create repository from the provided template**|
