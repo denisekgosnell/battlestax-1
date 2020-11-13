@@ -42,14 +42,13 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 |<details><summary><i>🖱️ Click me to show details</i></summary><br/>This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo. Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab:<br/><br/>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)</details>|
 
 
-|**✅ Step 1b. Create repository from the provided template**|
+|**✅ Step 1b. Create repository from the provided template**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 |<details><summary><i>🖱️ Click me to show details</i></summary><br/>From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.<br/><br/>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)<br/>- On the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.<br/><br/>![Template create repo](./tutorial/template-create-repo.png?raw=true)<br/>It should only take a moment for **GitHub** to generate a new repository in your account.</details>|
 
-|**✅ Step 1c. Navigate back to your place in the docs**|
+|**✅ Step 1c. Navigate back to your place in the docs**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
-||
-|<br/>Once completed you will land in the root of your new repository.<br/><br/>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)<br/>From there, navigate back to your place in the ocumentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)<br><br/>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)|
+|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Once completed you will land in the root of your new repository.<br/><br/>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)<br/>From there, navigate back to your place in the ocumentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)<br><br/>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)</details>|
 
 ### [🔝](#table-of-contents)
 
