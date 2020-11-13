@@ -39,7 +39,7 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 ||
 |<details><summary><i>🖱️ Click me to show details</i></summary><br/>Once completed you will land in the root of your new repository.<br/><br/>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)<br/>From there, navigate back to your place in the ocumentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)<br><br/>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)</details>|
 
-### [🔝](#table-of-contents)
+### [🔝](#%EF%B8%8F-table-of-contents)
 
 ## 2. Create your Astra instance
 
@@ -81,7 +81,7 @@ The credentials you copied to the clipboard look like the following JSON, we wil
 ```
 ***Note**: You can always comes back to the Astra UI later and copy your service account credentials at any time.*|
 
-### [🔝](#table-of-contents)
+### [🔝](#%EF%B8%8F-table-of-contents)
 
 ## 3. Setup Netlify account
 
@@ -124,7 +124,7 @@ select key,text_value from battlestax.games;
 
 ![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)
 
-### [🔝](#table-of-contents)
+### [🔝](#%EF%B8%8F-table-of-contents)
 
 
 ## 4. Setup for Production CI/CD
@@ -213,7 +213,7 @@ Collapse avec les details
 </p>
 </details>
 
-[🏠 <--Back to the top](#table-of-contents)
+[🏠 <--Back to the top](#%EF%B8%8F-table-of-contents)
 
 ## 5. Configure your IDE
 Do things with an IDE and stuff
