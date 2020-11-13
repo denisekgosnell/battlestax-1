@@ -11,10 +11,14 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 ## Table of Contents
 
+[1. Create your BattleStax repository from template](1-create-your-battlestax-repository)
+[**2. Create your Astra instance**](#2-copy-the-battlestax-repository)
+
+
 | Title  | Description
 |---|---|
-| [**1. Create your BattleStax repository from template**](1-create-your-battlestax-repository) | Github allows the creation of personal repositories through the buttton `[Use this Template]` on existing repository. |
-| [**2. Create your Astra instance**](#2-copy-the-battlestax-repository) | You don't have to install any database we have you covered, you will spawn a Cloud Database for free. |
+|  | Github allows the creation of personal repositories through the buttton `[Use this Template]` on existing repository. |
+| | You don't have to install any database we have you covered, you will spawn a Cloud Database for free. |
 | [**3. Setup Netlify account**](#3-setup-netlify-account) | **JAMStack** powa, your static content is deployed on Netlify platform |
 | [**4. Setup for Production CI/CD**](#4-setup-for-production-cicd) | With a bit of configuration any new commit in github will redeploy your code on netlify
 | [**5. Configure your IDE**](#5-configure-your-ide) | You can do the workshop on your machine with somne prerequisites or in the cloud with a pre-defined VSCode setup for you.|
@@ -249,7 +253,11 @@ GAMES_COLLECTION=games
 
 **✅ Step 4b. Test out an application build**
 
-On your local machine, create a new branch and issue an empty commit, then push it to your fork.
+|Create a new branch and issue an empty commit, then push it to your fork.|
+|---|
+
+<details><summary>Click to view the step by steps commands</summary>
+<p>
 
 📘 **Commands to execute**
 
@@ -257,6 +265,14 @@ On your local machine, create a new branch and issue an empty commit, then push 
 git checkout -b test_pr
 git commit --allow-empty -m "New branch to test ci/cd"
 git push origin test_pr
+```
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
 ```
 
 - Select your new branch in github
@@ -279,6 +295,11 @@ git push origin test_pr
 ![Netlify Setup Example](./tutorial/setup-github-8.png?raw=true)
 
 ![Netlify Setup Example](./tutorial/setup-github-9.png?raw=true)
+
+Collapse avec les details
+</p>
+</details>
+
 
 
 Observe the tests passing. PLACEHOLDER<--NEEDS INSTRUCTION
