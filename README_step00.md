@@ -73,18 +73,13 @@ This is important because as part of this workshop you will deploy the BattleSta
 |**✅ Step 2a. Register (if needed) and Sign In to Astra** :|
 |:---|
 |You can use your `Github`, `Google` accounts or register with an `email`.
-<br>Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character
-<br>[Registration Page](https://dtsx.io/workshop)
-<br>![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)
-<br>[Authentication Page](https://dtsx.io/workshop)
-<br>![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)|
-
+<br/>Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character<br/>[Registration Page](https://dtsx.io/workshop)<br/>![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)<br/>[Authentication Page](https://dtsx.io/workshop)<br/>![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)|
 
 |**✅ Step 2b. Choose the free plan and select your region**|
 |:---|
 |![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)
-<br>- **Select the free tier**: 5GB storage, no obligation
-<br>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
+<br/>- **Select the free tier**: 5GB storage, no obligation
+<br/>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
 
 **✅ Step 2c. Configure and create your database**
 
