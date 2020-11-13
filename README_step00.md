@@ -1,25 +1,40 @@
-# 00. Setup environment and tools
+# ⚒️ Setup Environment and Tools
 
 [![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
 [![Actions Status](https://github.com/DataStax-Academy/battlestax/workflows/BattleStax%20Tests/badge.svg)](https://github.com/DataStax-Academy/battlestax/actions) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e265340f-c6a6-4d7b-b24c-438b87c67876/deploy-status)](https://app.netlify.com/sites/battlestax-tutorial/deploys)
 
-[🏠 <--Back to Table of Contents](./README.md#table-of-contents)
+[🏠 <--Back to Main Page](./README.md#table-of-contents)
 
 This is arguably the biggest step in the whole workshop. Once you get your tools and environment setup you'll be good to go, not just for this workshop, but for your own **JAMStack** applications moving forward. Just repeat the process for your own application repositories.
 
-## Table of Contents
+> ![Template CTRL click](./tutorial/tools.png?raw=true)
 
-[1. In github, create your BattleStax repository from template](1-create-your-battlestax-repository)
+## 🗓️ Table of Contents
 
-[2. Create your Astra instance](#2-copy-the-battlestax-repository)
+[1. Setup your BattleStax repository (github)](1-create-your-battlestax-repository)
+  1. *Signup to the service*
+  2. *Create the repository from the template*
+  3. *Clone the repository*
 
-[3. Create a Netlify account and deploy a site](#3-setup-netlify-account)
+[2. Setup your Astra instance (database)](#2-copy-the-battlestax-repository)
+  1. *Signup to the service*
+  2. *Create a free tier instance*
+  3. *Setup the database*
+
+[3. Setup your Netlify account](#3-setup-netlify-account)
+  1. *Signup to the service*
+  2. *Create and setup a site*
+  3. *Deploy your application*
 
 [4. Setup CI/CD between github and Netlify](4-setup-for-production-cicd)
+  1. *Setup Github Secrets*
+  2. *Push new Content*
+  3. *Look at netlify logs*
 
 [5. Setup your development environment](#5-configure-your-ide)
+  1. *Gitpod Use a predined Cloud IDE*
+  2. *How to setup to work locally*
 
 
 ## 1. Create your `BattleStax` repository
@@ -28,15 +43,16 @@ The very first thing we want to do is create a copy of the BattleStax repository
 
 This is important because as part of this workshop you will deploy the BattleStax application to production and will need your own repository to do so. The good thing is we've made this easy for you by creating a template you can use to quickly copy the repo.
 
-**✅ Step 1a. Launch the BattleStax repo into another tab**
+|**✅ Step 1a. Launch the BattleStax repo into another tab**|
+|---|
+|This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
 
-This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
-
-Just scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
+Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
 
 > ![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
 
 **✅ Step 1b. Create repository from the provided template**
+
 From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
 
 > ![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
@@ -45,7 +61,7 @@ Then, on the **Create a new repository from battlestax** page you are presented 
 
 > ![Template create repo](./tutorial/template-create-repo.png?raw=true)
 
-It should only take a moment for **GitHub** to generate a new repository in your account.
+It should only take a moment for **GitHub** to generate a new repository in your account.|
 
 **✅ Step 1c. Navigate back to your place in the docs**
 
@@ -61,22 +77,25 @@ Once completed you will land in the root of your new repository. From there, nav
 
 `ASTRA` service is available at url [https://astra.datastax.com](https://dtsx.io/workshop). `ASTRA` is the simplest way to run Cassandra with zero operations at all - just push the button and get your cluster. `Astra` offers **5 Gb Tier Free Forever** and you **don't need a credit card** or anything to sign-up and use it. 
 
-**✅ Step 2a. Register (if needed) and Sign In to Astra** : You can use your `Github`, `Google` accounts or register with an `email`.
+**✅ Step 2a. Register (if needed) and Sign In to Astra** : 
+
+You can use your `Github`, `Google` accounts or register with an `email`.
+
 
 Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character
 
 - [Registration Page](https://dtsx.io/workshop)
 
-![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)
+> ![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)
 
 - [Authentication Page](https://dtsx.io/workshop)
 
-![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)
+> ![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)
 
 
 **✅ Step 2b. Choose the free plan and select your region**
 
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)
+> ![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)
 
 - **Select the free tier**: 5GB storage, no obligation
 
@@ -86,7 +105,7 @@ Make sure to chose a password with minimum 8 characters, containing upper and lo
 
 You will find below which values to enter for each field.
 
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/create-and-configure-annotated-1000.png?raw=true)
+> ![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/create-and-configure-annotated-1000.png?raw=true)
 
 - **Fill in the database name** - `battlestax_db.` While Astra allows you to fill in these fields with values of your own choosing, please follow our reccomendations to make the rest of the exercises easier to follow. If you don't, you are on your own! :)
 
@@ -100,7 +119,7 @@ You will find below which values to enter for each field.
 
 You will see your new database `Pending` in the Dashboard.
 
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000.png?raw=true)
+> ![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000.png?raw=true)
 
 The status will change to `Active` when the database is ready, this will only take 2-3 minutes. You will also receive an email when it is ready.
 
