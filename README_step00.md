@@ -45,24 +45,16 @@ This is important because as part of this workshop you will deploy the BattleSta
 
 |**✅ Step 1a. Launch the BattleStax repo into another tab**|
 |:---|
-|This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
-<br>Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
-<br>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
+|This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.<br/>Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.<br/>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
 
 
 |**✅ Step 1b. Create repository from the provided template**|
 |:---|
-|From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
-<br>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
-<br>Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
-<br>![Template create repo](./tutorial/template-create-repo.png?raw=true)
-<br>It should only take a moment for **GitHub** to generate a new repository in your account.|
+|From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.<br/>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)<br/>Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.<br/>![Template create repo](./tutorial/template-create-repo.png?raw=true)<br/>It should only take a moment for **GitHub** to generate a new repository in your account.|
 
 |**✅ Step 1c. Navigate back to your place in the docs**|
 |:---|
-|Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)
-<br>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)
-<br>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)|
+|Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)<br/>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)<br>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)|
 
 [🔝 <--Back to the top](#table-of-contents)
 
@@ -77,9 +69,7 @@ This is important because as part of this workshop you will deploy the BattleSta
 
 |**✅ Step 2b. Choose the free plan and select your region**|
 |:---|
-|![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)
-<br/>- **Select the free tier**: 5GB storage, no obligation
-<br/>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
+|![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)<br/>- **Select the free tier**: 5GB storage, no obligation<br/>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
 
 **✅ Step 2c. Configure and create your database**
 
