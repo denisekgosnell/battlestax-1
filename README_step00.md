@@ -45,7 +45,7 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 `ASTRA` service is available at url [https://astra.datastax.com](https://dtsx.io/workshop). `ASTRA` is the simplest way to run Cassandra with zero operations at all - just push the button and get your cluster. `Astra` offers **5 Gb Tier Free Forever** and you **don't need a credit card** or anything to sign-up and use it. 
 
-|**✅ Step 2a. Register (if needed) and Sign In to Astra** :br/>![.](./tutorial/line.png?raw=true)|
+|**✅ Step 2a. Register (if needed) and Sign In to Astra** :<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
 |<details><summary><i>🖱️ Click me to show details</i></summary><br/>You can use your `Github`, `Google` accounts or register with an `email`.<br/>Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character<br/><br/>- [Registration Page](https://dtsx.io/workshop)<br/>![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)<br/><br/>- [Authentication Page](https://dtsx.io/workshop)<br/>![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)<br/></details>|
@@ -68,7 +68,7 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 |**✅ Step 2e. Copy credentials to your clipboard**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/>|
+|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/></details>|
 
 The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
 
@@ -85,44 +85,20 @@ The credentials you copied to the clipboard look like the following JSON, we wil
 
 ## 3. Setup Netlify account
 
-|**✅ Step 3a. Setup a Netlify account**|
+|**✅ Step 3a. Setup a Netlify account**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<br />- Using the link [HERE](https://www.netlify.com), sign up for a new account and follow **Netlify's** instructions to create a **`New Site from Git`** (_you must be logged in to see this option_).<br /><br />![Netlify Setup Example](./tutorial/netlify-signin.png?raw=true)<br />- Once signin ,you should land on the following page.<br /><br />![Netlify Setup Example](./tutorial/netlify-empty.png?raw=true)<br />|
+|<details><summary><i>🖱️ Click me to show details</i></summary><br />- Using the link [HERE](https://www.netlify.com), sign up for a new account and follow **Netlify's** instructions to create a **`New Site from Git`** (_you must be logged in to see this option_).<br /><br />![Netlify Setup Example](./tutorial/netlify-signin.png?raw=true)<br />- Once signin ,you should land on the following page.<br /><br />![Netlify Setup Example](./tutorial/netlify-empty.png?raw=true)<br /></details>|
 
-|**✅ Step 3b. Create a new site**|
+|**✅ Step 3b. Create a new site**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<br/>Move to the `Sites` tab and Click the `New site from git` button.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-1.png?raw=true)<br/><br/>On the new page select `Github` and locate the proper repository in your github Account.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-2.png?raw=true)<br/><br/>After allowing the application `Netlify` on Github select the `BattleStax` <br/>![Netlify Setup Example](./tutorial/netlify-createsite-3.png?raw=true)<br/><br/>Use all of the defaults for `Basic Build Settings`<br/>![Netlify Setup Example](./tutorial/netlify-createsite-4.png?raw=true)<br/><br/>Click `Show advanced` to enter the following variables:<br/><br/> 🟢 `ASTRA_DB_USERNAME` as `battle_user` *(The user name we defined when creation the Astra instance)*<br/><br/>🟢 `ASTRA_DB_PASSWORD` as `battle_password1` *(The password we defined when creation the Astra instance)*<br/><br/> 🟢 `ASTRA_DB_KEYSPACE` as `battlestax` *(The keyspace we defined when creation the Astra instance)*<br/><br/>🟢 `ASTRA_DB_ID` as the cluster ID of your Astra DB. To get your database ID and region go the ASTRA summary page. Locate the cluster ID and copy it by clicking the clickboard icon as showed below. <br/>![Netlify Setup Example](./tutorial/netlify-createsite-5.png?raw=true)<br/><br/>🟢 `ASTRA_DB_REGION` as the region you picked when creating the DB., It should be either `us-east-1` or `europe-west1`<br/<br/><br/>🟢 `GAMES_COLLECTION` as `games` this is the collection where we will store all values.<br/><br/>You should now have something like<br/>![Netlify Setup Example](./tutorial/netlify-createsite-6.png?raw=true)|
+|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Move to the `Sites` tab and Click the `New site from git` button.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-1.png?raw=true)<br/><br/>On the new page select `Github` and locate the proper repository in your github Account.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-2.png?raw=true)<br/><br/>After allowing the application `Netlify` on Github select the `BattleStax` <br/>![Netlify Setup Example](./tutorial/netlify-createsite-3.png?raw=true)<br/><br/>Use all of the defaults for `Basic Build Settings`<br/>![Netlify Setup Example](./tutorial/netlify-createsite-4.png?raw=true)<br/><br/>Click `Show advanced` to enter the following variables:<br/><br/> 🟢 `ASTRA_DB_USERNAME` as `battle_user` *(The user name we defined when creation the Astra instance)*<br/><br/>🟢 `ASTRA_DB_PASSWORD` as `battle_password1` *(The password we defined when creation the Astra instance)*<br/><br/> 🟢 `ASTRA_DB_KEYSPACE` as `battlestax` *(The keyspace we defined when creation the Astra instance)*<br/><br/>🟢 `ASTRA_DB_ID` as the cluster ID of your Astra DB. To get your database ID and region go the ASTRA summary page. Locate the cluster ID and copy it by clicking the clickboard icon as showed below. <br/>![Netlify Setup Example](./tutorial/netlify-createsite-5.png?raw=true)<br/><br/>🟢 `ASTRA_DB_REGION` as the region you picked when creating the DB., It should be either `us-east-1` or `europe-west1`<br/<br/><br/>🟢 `GAMES_COLLECTION` as `games` this is the collection where we will store all values.<br/><br/>You should now have something like<br/>![Netlify Setup Example](./tutorial/netlify-createsite-6.png?raw=true)<br/></details>|
 
-|**✅ Step 4c. Deploy your site**|
+|**✅ Step 3c. Deploy your site**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**. 
-
-![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)
-
-Finally, wait for deployment! 
-
-![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)
-
-When your new site is ready, you will be able to go to: `<your_url>.netlify.app` to see your game.
-
-![Netlify Setup Example](./tutorial/netlify-createsite-8.png?raw=true)
-
-If you start new games it will create a new record in the database. If you want to validate this behavirour click on `START NEW GAME`
-
-- Open Astra UI, show the CQLCONSOLE and execute the following command (here *battlestax* is your keyspace and *games* your collection name - if you chose another names adapt the query accordingly).
-
-📘 **Commands to execute**
-
-```
-select key,text_value from battlestax.games;
-```
-
-- You should have a result that looks like 
-
-![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)
+|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.<br/>![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)<br/><br/>Finally, wait for deployment!<br/>![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)<br/><br/>When your new site is ready, you will be able to go to: `<your_url>.netlify.app` to see your game.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-8.png?raw=true)<br/><br/>If you start new games it will create a new record in the database. If you want to validate this behavirour click on `START NEW GAME`<br/><br/>Open Astra UI, show the CQLCONSOLE and execute the following command (here *battlestax* is your keyspace and *games* your collection name - if you chose another names adapt the query accordingly).<br/><br/>📘 **Commands to execute**<br/>```sql<br/>select key,text_value from battlestax.games;<br/>```<br/><br/>You should have a result that looks like <br/>![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)|
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
@@ -207,31 +183,18 @@ Collapse avec les details
 |✔️ Browsing `Netlify`, see the ci/cd process rolling wuth tests deployment|
 |---|
 
-<details><summary><i>Click to view step-by-step and screenshots</i></summary>
-<p>
-<.>
-</p>
-</details>
 
-[🏠 <--Back to the top](#%EF%B8%8F-table-of-contents)
+### [🔝](#%EF%B8%8F-table-of-contents)
 
 ## 5. Configure your IDE
 Do things with an IDE and stuff
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Academy/battlestax)
 
-[🏠 <--Back to the top](#table-of-contents)
+### [🔝](#%EF%B8%8F-table-of-contents)
 
 Ok, great. You should be all setup and ready to start coding against your app. 
 
 **Click** below to move to the next section.
 
 [Go to Create a REST API -->](./README_step01.md)
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
