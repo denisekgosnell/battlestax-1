@@ -13,28 +13,24 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 ## 🗓️ Table of Contents
 
 [1. Setup your BattleStax repository (github)](1-create-your-battlestax-repository)
-  1. *Signup to the service*
-  2. *Create the repository from the template*
-  3. *Clone the repository*
+
+> *Signup to the service, Create the repository from the template, Clone the repository*
 
 [2. Setup your Astra instance (database)](#2-copy-the-battlestax-repository)
-  1. *Signup to the service*
-  2. *Create a free tier instance*
-  3. *Setup the database*
+
+> *Signup to the service,Create a free tier instance, Setup the database*
 
 [3. Setup your Netlify account](#3-setup-netlify-account)
-  1. *Signup to the service*
-  2. *Create and setup a site*
-  3. *Deploy your application*
+
+> *Signup to the service, Create and setup a site, Deploy your application*
 
 [4. Setup CI/CD between github and Netlify](4-setup-for-production-cicd)
-  1. *Setup Github Secrets*
-  2. *Push new Content*
-  3. *Look at netlify logs*
+
+> *Setup Github Secrets, Push new Content, Look at netlify logs*
 
 [5. Setup your development environment](#5-configure-your-ide)
-  1. *Gitpod Use a predined Cloud IDE*
-  2. *How to setup to work locally*
+
+> *Gitpod Use a predined Cloud IDE, How to setup to work locally*
 
 
 ## 1. Create your `BattleStax` repository
@@ -75,17 +71,19 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 |**✅ Step 2c. Configure and create your database**|
 |:---|
-|.|
+||
 |<br/>You will find below which values to enter for each field.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/create-and-configure-annotated-1000.png?raw=true)<br/>- **Fill in the database name** - `battlestax_db.` While Astra allows you to fill in these fields with values of your own choosing, please follow our reccomendations to make the rest of the exercises easier to follow. If you don't, you are on your own! :)<br/>- **Fill in the keyspace name** - `battlestax`. It's really important that you use the name sa_index here in order for all the exercises to work well. We realize you want to be creative, but please just roll with this one today.<br/>- **Fill in the Database User name** - `battle_user`. Note the user name is case-sensitive. Please use the case we suggest here.<br/>- **Fill in the password** - `battle_password1`. Fill in both the password and the confirmation fields. Note that the password is also case-sensitive. Please use the case we suggest here.<br/>- **Create the database**. Review all the fields to make sure they are as shown, and click the **`Create Database`** button.<br/><br/>You will see your new database `Pending` in the Dashboard.<br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000.png?raw=true)<br/><br/>The status will change to `Active` when the database is ready, this will only take 2-3 minutes. You will also receive an email when it is ready.<br/>|
 
 |**✅ Step 2d. Create a service account**|
 |:---|
-|<br/>The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.<br/><br/>Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)<br/><br/>Create a service account by clicking **`Add Service Account`** button above the section as shown below.
-<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)<br/><br/>When the panel opens on the right, click **`Add`**. <br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)<br/>|
+||
+|<br/>The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.<br/><br/>Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)<br/><br/>Create a service account by clicking **`Add Service Account`** button above the section as shown below.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)<br/><br/>When the panel opens on the right, click **`Add`**. <br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)<br/>|
 
 |**✅ Step 2e. Copy credentials to your clipboard**|
 |:---|
-|<br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/><br/>The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.
+||
+|<br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/><br/>The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
+
 ```json
 {
   "clientId":"149de2c7-9b07-41b3-91ad-9453dee4dc54",
@@ -93,7 +91,7 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
   "clientSecret":"aaaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
 }
 ```
-<br/>***Note**: You can always comes back to the Astra UI later and copy your service account credentials at any time.*|
+***Note**: You can always comes back to the Astra UI later and copy your service account credentials at any time.*|
 
 ### [🔝](#table-of-contents)
 
@@ -101,49 +99,18 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 |**✅ Step 3a. Setup a Netlify account**|
 |:---|
+||
 |<br />- Using the link [HERE](https://www.netlify.com), sign up for a new account and follow **Netlify's** instructions to create a **`New Site from Git`** (_you must be logged in to see this option_).<br /><br />![Netlify Setup Example](./tutorial/netlify-signin.png?raw=true)<br />- Once signin ,you should land on the following page.<br /><br />![Netlify Setup Example](./tutorial/netlify-empty.png?raw=true)<br />|
 
-**✅ Step 3b. Create a new site**
+|**✅ Step 3b. Create a new site**|
+|:---|
+||
+|<br/>Move to the `Sites` tab and Click the `New site from git` button.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-1.png?raw=true)<br/><br/>On the new page select `Github` and locate the proper repository in your github Account.<br/>![Netlify Setup Example](./tutorial/netlify-createsite-2.png?raw=true)<br/><br/>After allowing the application `Netlify` on Github select the `BattleStax` <br/>![Netlify Setup Example](./tutorial/netlify-createsite-3.png?raw=true)<br/><br/>Use all of the defaults for `Basic Build Settings`<br/>![Netlify Setup Example](./tutorial/netlify-createsite-4.png?raw=true)<br/><br/>Click `Show advanced` to enter the following variables:<br/><br/> 🟢 `ASTRA_DB_USERNAME` as `battle_user` *(The user name we defined when creation the Astra instance)*<br/><br/>🟢 `ASTRA_DB_PASSWORD` as `battle_password1` *(The password we defined when creation the Astra instance)*<br/><br/> 🟢 `ASTRA_DB_KEYSPACE` as `battlestax` *(The keyspace we defined when creation the Astra instance)*<br/><br/>🟢 `ASTRA_DB_ID` as the cluster ID of your Astra DB. To get your database ID and region go the ASTRA summary page. Locate the cluster ID and copy it by clicking the clickboard icon as showed below. <br/>![Netlify Setup Example](./tutorial/netlify-createsite-5.png?raw=true)<br/><br/>🟢 `ASTRA_DB_REGION` as the region you picked when creating the DB., It should be either `us-east-1` or `europe-west1`<br/<br/><br/>🟢 `GAMES_COLLECTION` as `games` this is the collection where we will store all values.<br/><br/>You should now have something like<br/>![Netlify Setup Example](./tutorial/netlify-createsite-6.png?raw=true)|
 
-- Move to the `Sites` tab and Click the `New site from git` button.
-
-![Netlify Setup Example](./tutorial/netlify-createsite-1.png?raw=true)
-
-- On the new page select `Github` and locate the proper repository in your github Account.
-
-![Netlify Setup Example](./tutorial/netlify-createsite-2.png?raw=true)
-
-- After allowing the application `Netlify` on Github select the `BattleStax` 
-
-![Netlify Setup Example](./tutorial/netlify-createsite-3.png?raw=true)
-
-- Use all of the defaults for `Basic Build Settings`
-
-![Netlify Setup Example](./tutorial/netlify-createsite-4.png?raw=true)
-
-- Click `Show advanced` to enter the following variables:
-
-> `ASTRA_DB_USERNAME` as `battle_user` *(The user name we defined when creation the Astra instance)*
-
-> `ASTRA_DB_PASSWORD` as `battle_password1` *(The password we defined when creation the Astra instance)*
-
-> `ASTRA_DB_KEYSPACE` as `battlestax` *(The keyspace we defined when creation the Astra instance)*
-
-> `ASTRA_DB_ID` as the cluster ID of your Astra DB. To get your database ID and region go the ASTRA summary page. Locate the cluster ID and copy it by clicking the clickboard icon as showed below. 
-
-![Netlify Setup Example](./tutorial/netlify-createsite-5.png?raw=true)
-
-> `ASTRA_DB_REGION` as the region you picked when creating the DB., It should be either `us-east-1` or `europe-west1`
-
-> `GAMES_COLLECTION` as `games` this is the collection where we will store all values.
-
-- You should now have something like
-
-![Netlify Setup Example](./tutorial/netlify-createsite-6.png?raw=true)
-
-**✅ Step 4c. Deploy your site** 
-
-Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**. 
+|**✅ Step 4c. Deploy your site**|
+|:---|
+||
+|Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**. 
 
 ![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)
 
@@ -169,7 +136,8 @@ select key,text_value from battlestax.games;
 
 ![Netlify Setup Example](./tutorial/netlify-createsite-9.png?raw=true)
 
-[🏠 <--Back to the top](#table-of-contents)
+### [🔝](#table-of-contents)
+
 
 ## 4. Setup for Production CI/CD
 
