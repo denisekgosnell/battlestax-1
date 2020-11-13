@@ -11,17 +11,15 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 ## Table of Contents
 
-[1. Create your BattleStax repository from template](1-create-your-battlestax-repository)
-[**2. Create your Astra instance**](#2-copy-the-battlestax-repository)
+[1. In github, create your BattleStax repository from template](1-create-your-battlestax-repository)
 
+[2. Create your Astra instance](#2-copy-the-battlestax-repository)
 
-| Title  | Description
-|---|---|
-|  | Github allows the creation of personal repositories through the buttton `[Use this Template]` on existing repository. |
-| | You don't have to install any database we have you covered, you will spawn a Cloud Database for free. |
-| [**3. Setup Netlify account**](#3-setup-netlify-account) | **JAMStack** powa, your static content is deployed on Netlify platform |
-| [**4. Setup for Production CI/CD**](#4-setup-for-production-cicd) | With a bit of configuration any new commit in github will redeploy your code on netlify
-| [**5. Configure your IDE**](#5-configure-your-ide) | You can do the workshop on your machine with somne prerequisites or in the cloud with a pre-defined VSCode setup for you.|
+[3. Create a Netlify account and deploy a site](#3-setup-netlify-account)
+
+[4. Setup CI/CD between github and Netlify](4-setup-for-production-cicd)
+
+[5. Setup your development environment](#5-configure-your-ide)
 
 
 ## 1. Create your `BattleStax` repository
@@ -253,12 +251,11 @@ GAMES_COLLECTION=games
 
 **✅ Step 4b. Test out an application build**
 
-|Create a new branch and issue an empty commit, then push it to your fork.|
+|Using `git`, create a new branch and issue an empty commit, then push it to your repository.|
 |---|
 
-<details><summary>Click to view the step by steps commands</summary>
+<details><summary><i>Click to view the solution</i></summary>
 <p>
-
 📘 **Commands to execute**
 
 ```bash
@@ -266,20 +263,19 @@ git checkout -b test_pr
 git commit --allow-empty -m "New branch to test ci/cd"
 git push origin test_pr
 ```
+</p>
+</details>
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
+|Using the Github UI, merge your new branch to the master through a pull request|
+|---|
 
+<details><summary><i>Click to view the step-by-step solution</i></summary>
+<p>
 - Select your new branch in github
 
 ![Netlify Setup Example](./tutorial/setup-github-2.png?raw=true)
 
-- From the Github UI, open a PR but click and `Compare & Pull request` button. for `test_pr` into `master`. Caution don't target the original master from DataStax-Academy but **YOUR** master
+- open a PR but click and `Compare & Pull request` button. for `test_pr` into `master`. Caution don't target the original master from DataStax-Academy but **YOUR** master
 
 
 ![Netlify Setup Example](./tutorial/setup-github-3.png?raw=true)
@@ -297,14 +293,25 @@ git push origin test_pr
 ![Netlify Setup Example](./tutorial/setup-github-9.png?raw=true)
 
 Collapse avec les details
+
 </p>
 </details>
 
+|Go back netlify and see the ci/cd process with first tests and then deployment|
+|---|
 
+<details><summary><i>Click to view the step-by-step solution</i></summary>
+<p>
+<.>
+</p>
+</details>
 
-Observe the tests passing. PLACEHOLDER<--NEEDS INSTRUCTION
+[🏠 <--Back to the top](#table-of-contents)
 
-Merge the PR, observe the site deploying. PLACEHOLDER<--NEEDS INSTRUCTION
+## 5. Configure your IDE
+Do things with an IDE and stuff
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Academy/battlestax)
 
 [🏠 <--Back to the top](#table-of-contents)
 
@@ -314,11 +321,10 @@ Ok, great. You should be all setup and ready to start coding against your app.
 
 [Go to Create a REST API -->](./README_step01.md)
 
-## 5. Configure your IDE
-Do things with an IDE and stuff
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Academy/battlestax)
-
-
-
-[🏠 <--Back to the top](#table-of-contents)
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
