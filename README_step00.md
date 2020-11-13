@@ -46,9 +46,7 @@ This is important because as part of this workshop you will deploy the BattleSta
 |**✅ Step 1a. Launch the BattleStax repo into another tab**|
 |:---|
 |This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo.
-
 <br>Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab.
-
 <br>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)
 
 
@@ -57,48 +55,36 @@ This is important because as part of this workshop you will deploy the BattleSta
 |From the new tab you just launched, click on the **`Use this template`** button up on the top right of the toolbar.
 <br>![Template CTRL click](./tutorial/template-click-use-template.png?raw=true)
 <br>Then, on the **Create a new repository from battlestax** page you are presented with, fill out the **`Repository name`** field with `battlestax`, choose **`Public`** (_this should be default_), and finally click the **`Create repository from template`** button at the bottom of the page.
-
 <br>![Template create repo](./tutorial/template-create-repo.png?raw=true)
-
 <br>It should only take a moment for **GitHub** to generate a new repository in your account.|
 
-**✅ Step 1c. Navigate back to your place in the docs**
+|**✅ Step 1c. Navigate back to your place in the docs**|
+|:---|
+|Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)
+<br>![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)
+<br>![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)|
 
-Once completed you will land in the root of your new repository. From there, navigate back to your place in the in the documentation and continue on [with creating your **Astra** instance.](README_step00.md#2-copy-the-battlestax-repository)
-
-> ![Template nav back to step0](./tutorial/template-nav-back-to-step0.png?raw=true)
-
-> ![Template nav to create astra](./tutorial/template-nav-to-create-astra.png?raw=true)
-
-[🏠 <--Back to the top](#table-of-contents)
+[🔝 <--Back to the top](#table-of-contents)
 
 ## 2. Create your Astra instance
 
 `ASTRA` service is available at url [https://astra.datastax.com](https://dtsx.io/workshop). `ASTRA` is the simplest way to run Cassandra with zero operations at all - just push the button and get your cluster. `Astra` offers **5 Gb Tier Free Forever** and you **don't need a credit card** or anything to sign-up and use it. 
 
-**✅ Step 2a. Register (if needed) and Sign In to Astra** : 
-
-You can use your `Github`, `Google` accounts or register with an `email`.
-
-
-Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character
-
-- [Registration Page](https://dtsx.io/workshop)
-
-> ![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)
-
-- [Authentication Page](https://dtsx.io/workshop)
-
-> ![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)
+|**✅ Step 2a. Register (if needed) and Sign In to Astra** :|
+|:---|
+|You can use your `Github`, `Google` accounts or register with an `email`.
+<br>Make sure to chose a password with minimum 8 characters, containing upper and lowercase letters, at least one number and special character
+<br>[Registration Page](https://dtsx.io/workshop)
+<br>![Registration Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/login-1000.png?raw=true)
+<br>[Authentication Page](https://dtsx.io/workshop)
+<br>![Login Image](https://github.com/datastaxdevs/shared-assets/blob/master/astra/signin-raw.png?raw=true)|
 
 
-**✅ Step 2b. Choose the free plan and select your region**
-
-> ![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)
-
-- **Select the free tier**: 5GB storage, no obligation
-
-- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.
+|**✅ Step 2b. Choose the free plan and select your region**|
+|:---|
+|![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/choose-a-plan-1000-annotated.png?raw=true)
+<br>- **Select the free tier**: 5GB storage, no obligation
+<br>- **Select the region**: This is the region where your database will reside physically (choose one close to you or your users). For people in EMEA please use `europe-west-1` idea here is to reduce latency.|
 
 **✅ Step 2c. Configure and create your database**
 
