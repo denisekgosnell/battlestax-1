@@ -40,7 +40,7 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 |**✅ Step 1a. `Launch the BattleStax repo into another tab`**|
 |:---|
 ||
-|<br/>This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo. Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab:<br/><br/>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)|
+|<details><summary><i>Show Details</i></summary><br/>This might seem like an odd step, but will allow you to keep your place in the instructions you are reading now until you move to the new repo. Scroll up on the **GitHub** repo page, **_Right-Click_** on the **`battlestax`** repo name, and choose **`Open Link in New Tab`** to launch it in a new tab:<br/><br/>![Template CTRL click](./tutorial/template-ctrl-click.png?raw=true)</details>|
 
 
 |**✅ Step 1b. Create repository from the provided template**|
