@@ -118,19 +118,91 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 |**✅ Step 4b. Test out an application build**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>Click to view the solution</i></summary><br/>✔ Using `git`, create a new branch and issue an empty commit, then push it to your repository.<br/><br/>📘 **Commands to execute**<br/>`git checkout -b test_pr`<br/>`git commit --allow-empty -m "New branch to test ci/cd"`<br/>`git push origin test_pr`<br/><br/>✔️ Using `Github UI`, merge your new branch to the master through a pull request.<br/><br/>Select your new branch in github<br/>![Netlify Setup Example](./tutorial/setup-github-2.png?raw=true)<br/><br/>Open a PR but click and `Compare & Pull request` button. for `test_pr` into `master`.<br/>![Netlify Setup Example](./tutorial/setup-github-3.png?raw=true)<br/><br/>Caution don't target the original master from DataStax-Academy but **YOUR** master![Netlify Setup Example](./tutorial/setup-github-4.png?raw=true)<br/><br/>Provide a comment and click `Create Pull Request`<br/>![Netlify Setup Example](./tutorial/setup-github-5.png?raw=true)<br/><br/>Your Pull request is now ready, let's merge it![Netlify Setup Example](./tutorial/setup-github-6.png?raw=true)<br/><br/>Click on `Merge Pull Request`<br/>![Netlify Setup Example](./tutorial/setup-github-7.png?raw=true)<br/><br/>Click on `Confirm Merge`<br/>![Netlify Setup Example](./tutorial/setup-github-8.png?raw=true)<br/><br/>Congratulations you are done here is what it look like <br/>![Netlify Setup Example](./tutorial/setup-github-9.png?raw=true)</p><br/>✔️ Browsing `Netlify`, see the ci/cd process rolling wuth tests deployment</details>|
+|<details><summary><i>Click to view the solution</i></summary><br/>✔ Using `git`, create a new branch and issue an empty commit, then push it to your repository.<br/><br/>📘 **Commands to execute**<br/>`git checkout -b test_pr`<br/>`git commit --allow-empty -m "New branch to test ci/cd"`<br/>`git push origin test_pr`<br/><br/>✔️ Using `Github UI`, merge your new branch to the master through a pull request.<br/><br/>Select your new branch in github<br/>![Netlify Setup Example](./tutorial/setup-github-2.png?raw=true)<br/><br/>Open a PR but click and `Compare & Pull request` button. for `test_pr` into `master`.<br/>![Netlify Setup Example](./tutorial/setup-github-3.png?raw=true)<br/><br/>Caution don't target the original master from DataStax-Academy but **YOUR** master![Netlify Setup Example](./tutorial/setup-github-4.png?raw=true)<br/><br/>Provide a comment and click `Create Pull Request`<br/>![Netlify Setup Example](./tutorial/setup-github-5.png?raw=true)<br/><br/>Your Pull request is now ready, let's merge it![Netlify Setup Example](./tutorial/setup-github-6.png?raw=true)<br/><br/>Click on `Merge Pull Request`<br/>![Netlify Setup Example](./tutorial/setup-github-7.png?raw=true)<br/><br/>Click on `Confirm Merge`<br/>![Netlify Setup Example](./tutorial/setup-github-8.png?raw=true)<br/><br/>Congratulations you are done here is what it look like <br/>![Netlify Setup Example](./tutorial/setup-github-9.png?raw=true)</p><br/>✔️ Browsing `Netlify`, see the ci/cd process rolling wuth tests deployment<br/>![Netlify Setup Example](./tutorial/setup-github-10.png?raw=true)<br/>You have access to lofs<br/>![Netlify Setup Example](./tutorial/setup-github-11.png?raw=true)<br/> Notice how the status moved from `deploying` to `published`</details>|
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
 ## 5. Configure your IDE
-Do things with an IDE and stuff
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Academy/battlestax)
+To code during this workshop you can either use your laptop or we will provide you an IDE in the cloud.
 
-### [🔝](#%EF%B8%8F-table-of-contents)
+**✅ Step 5a Open gitpod IDE :**
 
-Ok, great. You should be all setup and ready to start coding against your app. 
+Gitpod is an IDE 100% online based on Eclipse Theia. To initialize your environment simply click on the button below (CTRL + Click to open in new tab)
 
-**Click** below to move to the next section.
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
-[Go to Create a REST API -->](./README_step01.md)
+Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance. 
+
+**That's it.** Gitpod provides all tools we will need today including Maven,Pip,Npm. At initialization of the workspace we schedule a command to download dependencies.
+
+**✅ Step 5b Work locally :**
+
+### Prerequisites
+
+To run the application locally you need to have a couple of tools installed:
+
+- [NodeJS](https://nodejs.org/en/download/): Check your NodeJs version in your terminal `node -v`. Make sure it is up to NodeJS 12.X LTS. If not, install NodeJS 12.X LTS
+- [GIT](#)
+- [An IDE like VS CODE](#)
+
+
+### Clone the repository
+
+Clone _your_ `BattleStax Tutorial` repository to localhost, use the following command in your terminal to do so:
+
+```bash
+git clone git@github.com:[your_github_id]/battlestax-tutorial.git
+```
+
+### Define the environment variables
+
+- Copy and paste the contents of the `.env.template` file into an `.env` file:
+```
+cd battlestax-tutorial
+cp .env.template .env
+```
+
+The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program.
+
+- Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
+```
+ASTRA_DB_USERNAME=
+ASTRA_DB_PASSWORD=
+ASTRA_DB_KEYSPACE=
+ASTRA_DB_ID=
+ASTRA_DB_REGION=
+GAMES_COLLECTION=games
+```
+
+
+3. 
+
+4. Install Battlestax Dependencies. These are specified in the package.json file.
+```
+npm install
+```
+
+5. Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
+```
+npm test
+```
+
+6. Start your app
+```
+npm start
+```
+
+7. Hit the loading screen
+```
+http://localhost:3000/
+```
+
+Done! You have successfully set up your app, run your tests locally, and started BattleStax.
+Next, let's set up your production deployment process with Netlify.
+
+
+git clone git@github.com:[your_github_id]/battlestax-tutorial.git
+
+
+[==> Move to the next section: **Create a REST API**](./README_step01.md)
