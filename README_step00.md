@@ -130,7 +130,7 @@ To code during this workshop you can either use your laptop or we will provide y
 
 Gitpod is an IDE 100% online based on Eclipse Theia. To initialize your environment simply click on the button below (CTRL + Click to open in new tab)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#from-referrer/)
 
 Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance. 
 
@@ -166,43 +166,57 @@ cp .env.template .env
 The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program.
 
 - Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
+
 ```
-ASTRA_DB_USERNAME=
-ASTRA_DB_PASSWORD=
-ASTRA_DB_KEYSPACE=
-ASTRA_DB_ID=
-ASTRA_DB_REGION=
+ASTRA_DB_USERNAME=battle_user
+ASTRA_DB_PASSWORD=battle_password1
+ASTRA_DB_KEYSPACE=battlestax
+ASTRA_DB_ID=[cf bloc 3b]
+ASTRA_DB_REGION=[cf bloc 3b]
 GAMES_COLLECTION=games
 ```
 
+- Install Battlestax Dependencies. These are specified in the package.json file.
 
-3. 
-
-4. Install Battlestax Dependencies. These are specified in the package.json file.
 ```
 npm install
 ```
 
-5. Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
+- Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
 ```
 npm test
 ```
 
-6. Start your app
+output
+```
+$battlestax> npm test
+
+> battlestax-tutorial@0.0.1 test /Users/cedricklunven/dev/WORKSPACES/DATASTAX/JS/battlestax-clun/battlestax
+> CI=true react-scripts test
+
+PASS src/store/gameSlice.test.js
+PASS src/pages/lobby/NewGame/NewGame.test.js
+PASS src/components/App/App.test.js
+
+Test Suites: 3 passed, 3 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        4.177s
+Ran all test suites.
+```
+
+- Start your app
 ```
 npm start
 ```
 
-7. Hit the loading screen
+- Hit the loading screen
 ```
 http://localhost:3000/
 ```
 
 Done! You have successfully set up your app, run your tests locally, and started BattleStax.
 Next, let's set up your production deployment process with Netlify.
-
-
-git clone git@github.com:[your_github_id]/battlestax-tutorial.git
 
 
 [==> Move to the next section: **Create a REST API**](./README_step01.md)
