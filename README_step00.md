@@ -68,7 +68,9 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 |**✅ Step 2e. Copy credentials to your clipboard**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/><br/>The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
+|<br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/>|
+
+The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
 
 ```json
 {
