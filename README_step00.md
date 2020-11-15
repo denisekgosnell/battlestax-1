@@ -106,30 +106,16 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 
 *To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. Here we explain the Gitpod way.*
 
-|**✅ Step 5a: Launch gitpod**br/>![.](./tutorial/line.png?raw=true)|
+|**✅ Step 5a: Launch gitpod**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>Click to view the solution</i></summary><br/> ✔  Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. You need to authenticate with your github account but then gipod will initialized you workspace, building the solution.<br/><br/>To initialize your environment click on the button below (CTRL + Click to open in new tab)<br/>[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)<br/><br/>Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance.<br/>![Netlify Setup Example](./tutorial/gitpod-welcome.png?raw=true)<br/>|
+|<details><summary><i>Click to view the solution</i></summary><br/> ✔ Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. You need to authenticate with your github account but then gipod will initialized you workspace, building the solution.To initialize your environment click on the button below (CTRL + Click to open in new tab)<br/>[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)<br/><br/>Target url are dynamic and looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`<br/>![Netlify Setup Example](./tutorial/gitpod-welcome.png?raw=true)<br/>|
 
-**✅ Step 5b. Define environment variables**
 
-✔  Copy and paste the contents of the `.env.template` file into an `.env` file:
-```bash
-cat .env.example > .env
-```
-
-✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
-
-```ini
-ASTRA_DB_USERNAME=battle_user
-ASTRA_DB_PASSWORD=battle_password1
-ASTRA_DB_KEYSPACE=battlestax
-ASTRA_DB_ID=[cf bloc 3b]
-ASTRA_DB_REGION=[cf bloc 3b]
-GAMES_COLLECTION=games
-```
-
-![Netlify Setup Example](./tutorial/gitpod-env.png?raw=true)
+|**✅ Step 5b. Define environment variables**<br/>![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/>✔  Copy and paste the contents of the `.env.template` file into an `.env` file:<br/>`cat .env.example > .env`<br/><br/>✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:<br/>`ASTRA_DB_USERNAME=battle_user`<br/>`ASTRA_DB_PASSWORD=battle_password1`<br/>`ASTRA_DB_KEYSPACE=battlestax`<br/>`ASTRA_DB_ID=[cf bloc 3b]`<br/>`ASTRA_DB_REGION=[cf bloc 3b]`<br/>`GAMES_COLLECTION=games`<br/><br/>![Netlify Setup Example](./tutorial/gitpod-env.png?raw=true)<br/>|
 
 
 **✅ Step 5c. Run the Tests**
