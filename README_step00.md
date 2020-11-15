@@ -117,27 +117,60 @@ You need to authenticate with your github account but then gipod will initialize
 ! Autosave is not enabled by default on gitpod
 ```
 
-**✅ Step 5b. Setup gitpod with your service account **
+**✅ Step 5b. Define environment variables**
 
-The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.<br/><br/>Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)<br/><br/>Create a service account by clicking **`Add Service Account`** button above the section as shown below.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)<br/><br/>When the panel opens on the right, click **`Add`**. <br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)<br/>
-
-Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/></details>|
-
-The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
-
-```json
-{
-  "clientId":"149de2c7-9b07-41b3-91ad-9453dee4dc54",
-  "clientName":"cedrick.lunven@datastax.com",
-  "clientSecret":"aaaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
-}
+✔  Copy and paste the contents of the `.env.template` file into an `.env` file:
+```bash
+cat .env.example > .env
 ```
-***Note**: You can always comes back to the Astra UI later and copy your service account credentials at any time.*|
+
+✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
+
+```ini
+ASTRA_DB_USERNAME=battle_user
+ASTRA_DB_PASSWORD=battle_password1
+ASTRA_DB_KEYSPACE=battlestax
+ASTRA_DB_ID=[cf bloc 3b]
+ASTRA_DB_REGION=[cf bloc 3b]
+GAMES_COLLECTION=games
+```
+
+**✅ Step 5c. Run the Tests**
+
+✔ At initialization gitpod has download dependencies already (you should have the `node_modules` folder already there. Still, check dependencies are installed with :
+```
+npm install
+```
+
+✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
+```
+npm test
+```
+
+**Expected output**
 
 
-**That's it.** Gitpod provides all tools we will need today including Maven,Pip,Npm. At initialization of the workspace we schedule a command to download dependencies.
+**✅ Step 5d. Start the application**
 
-<br/>
+✔  Start the application
+```bash
+npm start
+```
+
+✔  Hit the loading screen
+```
+http://localhost:3000/
+```
+
+![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)
+
+**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.
+
+![Netlify Setup Example](./tutorial/well-done.png?raw=true)
+
+
+
+
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
@@ -146,9 +179,7 @@ The credentials you copied to the clipboard look like the following JSON, we wil
 *To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named Gitpod. Here we explain how to work locally.*
 
 ```diff
-+ Information : 
-
-We assume people working locally are not beginner and autonomous to install a development environment. Here are describe the configuration steps.
++ Information : We assume people working locally are not beginner and autonomous to install a development environment. Here are describe the configuration steps.
 ```
 
 **✅ Step 6a. Install Prerequisites tools**
@@ -176,16 +207,13 @@ cd battlestax
 **✅ Step 6c. Define environment variables**
 
 ✔  Copy and paste the contents of the `.env.template` file into an `.env` file:
-```
-cd battlestax-tutorial
+```bash
 cp .env.template .env
 ```
 
-The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program.
+✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
 
-✔ Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
-
-```
+```ini
 ASTRA_DB_USERNAME=battle_user
 ASTRA_DB_PASSWORD=battle_password1
 ASTRA_DB_KEYSPACE=battlestax
@@ -193,6 +221,8 @@ ASTRA_DB_ID=[cf bloc 3b]
 ASTRA_DB_REGION=[cf bloc 3b]
 GAMES_COLLECTION=games
 ```
+
+**✅ Step 6d. Run the Tests**
 
 ✔ Install Battlestax Dependencies. These are specified in the `package.json` file.
 ```
@@ -204,7 +234,7 @@ npm install
 npm test
 ```
 
-Expected output:
+**Expected output**
 ```bash
 $battlestax> npm test
 
@@ -222,8 +252,10 @@ Time:        4.177s
 Ran all test suites.
 ```
 
+**✅ Step 6e. Start the application**
+
 ✔  Start the application
-```
+```bash
 npm start
 ```
 
@@ -232,6 +264,10 @@ npm start
 http://localhost:3000/
 ```
 
-Done! You have successfully set up your app, run your tests locally, and started BattleStax.
+![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)
+
+**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.
+
+![Netlify Setup Example](./tutorial/well-done.png?raw=true)
 
 [==> Move to the next section: **Create a REST API**](./README_step01.md)
