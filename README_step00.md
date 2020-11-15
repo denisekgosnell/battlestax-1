@@ -12,11 +12,12 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 
 ## 🗓️ Table of Contents
 
-1. [Setup your BattleStax repository (github)](#1-create-your-battlestax-repository)
-2. [Setup your Astra instance (database)](#2-copy-the-battlestax-repository)
-3. [Setup your Netlify account](#3-setup-netlify-account)
-4. [Setup CI/CD between github and Netlify](4-setup-for-production-cicd)
-5. [Setup your development environment](#5-configure-your-ide)
+1. [Setup your BattleStax `github` repository](#1-create-your-battlestax-repository)
+2. [Setup your `Astra` instance (database)](#2-create-your-astra-instance)
+3. [Setup your `Netlify` account](#3-setup-netlify-account)
+4. [Setup CI/CD between github and Netlify](#4-setup-for-production-cicd)
+5. [Setup your cloud-based `GITPOD` development environment](#5-configure-your-ide)
+6. [Setup your `LOCAL` development environment](#5-configure-your-ide)
 
 
 ## 1. Create your `BattleStax` repository
@@ -101,7 +102,7 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
-## 5. Configure your coding environment with GITPOD
+## 5. Setup your cloud-based GITPOD development environment
 
 *To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. Here we explain the Gitpod way.
 
@@ -168,13 +169,9 @@ http://localhost:3000/
 
 ![Netlify Setup Example](./tutorial/well-done.png?raw=true)
 
-
-
-
-
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
-## 6. Configure your local coding environment
+## 6. Setup your LOCAL development environment
 
 *To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named Gitpod. Here we explain how to work locally.*
 
