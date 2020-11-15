@@ -109,44 +109,25 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 |**✅ Step 5a: Launch gitpod**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>Click to view the solution</i></summary><br/> ✔ Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. You need to authenticate with your github account but then gipod will initialized you workspace, building the solution.To initialize your environment click on the button below (CTRL + Click to open in new tab)<br/>[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)<br/><br/>Target url are dynamic and looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`<br/>![Netlify Setup Example](./tutorial/gitpod-welcome.png?raw=true)<br/>|
+|<details><summary><i>Click to view the solution</i></summary><br/> ✔ Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. You need to authenticate with your github account but then gipod will initialized you workspace, building the solution.To initialize your environment click on the button below (CTRL + Click to open in new tab)<br/>[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)<br/><br/>Target url are dynamic and looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`<br/>![Netlify Setup Example](./tutorial/gitpod-welcome.png?raw=true)</details><br/>|
 
 
 |**✅ Step 5b. Define environment variables**<br/>![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>Click to view the solution</i></summary><br/>✔  Copy and paste the contents of the `.env.template` file into an `.env` file:<br/>`cat .env.example > .env`<br/><br/>✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:<br/>`ASTRA_DB_USERNAME=battle_user`<br/>`ASTRA_DB_PASSWORD=battle_password1`<br/>`ASTRA_DB_KEYSPACE=battlestax`<br/>`ASTRA_DB_ID=[cf bloc 3b]`<br/>`ASTRA_DB_REGION=[cf bloc 3b]`<br/>`GAMES_COLLECTION=games`<br/><br/>![Netlify Setup Example](./tutorial/gitpod-env.png?raw=true)<br/>|
+|<details><summary><i>Click to view the solution</i></summary><br/>✔  Copy and paste the contents of the `.env.template` file into an `.env` file:<br/>`cat .env.example > .env`<br/><br/>✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:<br/>`ASTRA_DB_USERNAME=battle_user`<br/>`ASTRA_DB_PASSWORD=battle_password1`<br/>`ASTRA_DB_KEYSPACE=battlestax`<br/>`ASTRA_DB_ID=[cf bloc 3b]`<br/>`ASTRA_DB_REGION=[cf bloc 3b]`<br/>`GAMES_COLLECTION=games`<br/><br/>![Netlify Setup Example](./tutorial/gitpod-env.png?raw=true)</details><br/>|
 
 
-**✅ Step 5c. Run the Tests**
-
-✔ At initialization gitpod has download dependencies already (you should have the `node_modules` folder already there. Still, check dependencies are installed with :
-```
-npm install
-```
-
-✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
-```
-npm test
-```
+|**✅ Step 5c. Run the Tests**<br/>![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/>✔ At initialization gitpod has download dependencies already (you should have the `node_modules` folder already there. Still, check dependencies are installed with :<br/>`npm install`<br/><br/>✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.<br/><br/>![Netlify Setup Example](./tutorial/gitpod-env.png?raw=true)<br/>`npm test`</details><br/>|
 
 
-
-**✅ Step 5d. Start the application**
-
-✔  Start the application
-```bash
-npm start
-```
-
-✔  Hit the loading screen
-```
-http://localhost:3000/
-```
-
-![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)
-
-**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.
+|**✅ Step 5d. Start the application**![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/>✔ Start the application<br/>```npm start```<br/><br/>✔  Hit the loading screen<br/>`https://3000-<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)<br/><br/>**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.</details><br/>|
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
