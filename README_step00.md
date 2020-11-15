@@ -60,27 +60,6 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 ||
 |<details><summary><i>🖱️ Click me to show details</i></summary><br/>You will find below which values to enter for each field.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/create-and-configure-annotated-1000.png?raw=true)<br/>- **Fill in the database name** - `battlestax_db.` While Astra allows you to fill in these fields with values of your own choosing, please follow our reccomendations to make the rest of the exercises easier to follow. If you don't, you are on your own! :)<br/>- **Fill in the keyspace name** - `battlestax`. It's really important that you use the name sa_index here in order for all the exercises to work well. We realize you want to be creative, but please just roll with this one today.<br/>- **Fill in the Database User name** - `battle_user`. Note the user name is case-sensitive. Please use the case we suggest here.<br/>- **Fill in the password** - `battle_password1`. Fill in both the password and the confirmation fields. Note that the password is also case-sensitive. Please use the case we suggest here.<br/>- **Create the database**. Review all the fields to make sure they are as shown, and click the **`Create Database`** button.<br/><br/>You will see your new database `Pending` in the Dashboard.<br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000.png?raw=true)<br/><br/>The status will change to `Active` when the database is ready, this will only take 2-3 minutes. You will also receive an email when it is ready.<br/></details>|
 
-|**✅ Step 2d. Create a service account**<br/>![.](./tutorial/line.png?raw=true)|
-|:---|
-||
-|<details><summary><i>🖱️ Click me to show details</i></summary><br/>The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.<br/><br/>Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)<br/><br/>Create a service account by clicking **`Add Service Account`** button above the section as shown below.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)<br/><br/>When the panel opens on the right, click **`Add`**. <br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)<br/></details>|
-
-|**✅ Step 2e. Copy credentials to your clipboard**<br/>![.](./tutorial/line.png?raw=true)|
-|:---|
-||
-|<details><summary><i>🖱️ Click me to show details</i></summary><br/>Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/></details>|
-
-The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
-
-```json
-{
-  "clientId":"149de2c7-9b07-41b3-91ad-9453dee4dc54",
-  "clientName":"cedrick.lunven@datastax.com",
-  "clientSecret":"aaaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
-}
-```
-***Note**: You can always comes back to the Astra UI later and copy your service account credentials at any time.*|
-
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
 ## 3. Setup Netlify account
@@ -122,49 +101,81 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
-## 5. Configure your IDE
+## 5. Configure your coding environment with GITPOD
 
-To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. For screenshots and live demo the team will use gitpod.
+*To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. Here we explain the Gitpod way.
 
-**✅ Step 5a:  Setup your coding env with GITPOD :**
+**✅ Step 5a: Launch gitpod**
 
-<details>
- <summary><i>Click to view the solution</i></summary>
-
-<br/>
-✔  Gitpod is an IDE 100% online based on Eclipse Theia. To initialize your environment simply click on the button below (CTRL + Click to open in new tab)
+✔  Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. To initialize your environment click on the button below (CTRL + Click to open in new tab)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
-Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance. 
+You need to authenticate with your github account but then gipod will initialized you workspace, building the solution. Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance.
+
+```diff
+! Autosave is not enabled by default on gitpod
+```
+
+**✅ Step 5b. Setup gitpod with your service account **
+
+The last thing to do with **Astra** is create a service account. You will use this later to quickly connect your application to the database as a back-end store.<br/><br/>Scroll down to the bottom of the page to locate **`Service Account`** in `Security Settings`.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-home-1000.png?raw=true)<br/><br/>Create a service account by clicking **`Add Service Account`** button above the section as shown below.<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-settings-annotated.png?raw=true)<br/><br/>When the panel opens on the right, click **`Add`**. <br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/security-add-org-annotated.png?raw=true)<br/>
+
+Click the ellipsis at end of Service Account row to open menu as select **`Copy Credentials`**<br/><br/>![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/organization-copycredentials-1000.png?raw=true)<br/></details>|
+
+The credentials you copied to the clipboard look like the following JSON, we will use it in gitpod to enable connectivity.|
+
+```json
+{
+  "clientId":"149de2c7-9b07-41b3-91ad-9453dee4dc54",
+  "clientName":"cedrick.lunven@datastax.com",
+  "clientSecret":"aaaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+}
+```
+***Note**: You can always comes back to the Astra UI later and copy your service account credentials at any time.*|
+
 
 **That's it.** Gitpod provides all tools we will need today including Maven,Pip,Npm. At initialization of the workspace we schedule a command to download dependencies.
 
-</details>
 <br/>
 
-**✅ Step 5a : Setup your coding env on your laptop :**
+### [🔝](#%EF%B8%8F-table-of-contents)
 
-### Prerequisites
+## 6. Configure your local coding environment
 
-To run the application locally you need to have a couple of tools installed:
+*To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named Gitpod. Here we explain how to work locally.*
 
-- [NodeJS](https://nodejs.org/en/download/): Check your NodeJs version in your terminal `node -v`. Make sure it is up to NodeJS 12.X LTS. If not, install NodeJS 12.X LTS
-- [GIT](#)
-- [An IDE like VS CODE](#)
+```diff
++ Information : 
 
-
-### Clone the repository
-
-Clone _your_ `BattleStax Tutorial` repository to localhost, use the following command in your terminal to do so:
-
-```bash
-git clone git@github.com:[your_github_id]/battlestax-tutorial.git
+We assume people working locally are not beginner and autonomous to install a development environment. Here are describe the configuration steps.
 ```
 
-### Define the environment variables
+**✅ Step 6a. Install Prerequisites tools**
 
-- Copy and paste the contents of the `.env.template` file into an `.env` file:
+Here is the list of tools you need:
+
+- [NodeJS 12.x+](https://nodejs.org/en/download/)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- An IDE like [Visual Studio Code](#https://code.visualstudio.com/Download), [Jetbrain WebStorm](#https://www.jetbrains.com/webstorm/download/#section=mac) or [Atom](#https://atom.io/)
+
+
+**✅ Step 6b. Clone the repository**
+
+✔  Clone **_your_** `BattleStax` repository to localhost, use the following command in your terminal to do so:
+
+```bash
+git clone git@github.com:[your_github_id]/battlestax.git
+```
+
+✔  Move to the proper directory
+```bash
+cd battlestax
+```
+
+**✅ Step 6c. Define environment variables**
+
+✔  Copy and paste the contents of the `.env.template` file into an `.env` file:
 ```
 cd battlestax-tutorial
 cp .env.template .env
@@ -172,7 +183,7 @@ cp .env.template .env
 
 The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program.
 
-- Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
+✔ Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
 
 ```
 ASTRA_DB_USERNAME=battle_user
@@ -183,19 +194,18 @@ ASTRA_DB_REGION=[cf bloc 3b]
 GAMES_COLLECTION=games
 ```
 
-- Install Battlestax Dependencies. These are specified in the package.json file.
-
+✔ Install Battlestax Dependencies. These are specified in the `package.json` file.
 ```
 npm install
 ```
 
-- Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
+✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
 ```
 npm test
 ```
 
-output
-```
+Expected output:
+```bash
 $battlestax> npm test
 
 > battlestax-tutorial@0.0.1 test /Users/cedricklunven/dev/WORKSPACES/DATASTAX/JS/battlestax-clun/battlestax
@@ -212,18 +222,16 @@ Time:        4.177s
 Ran all test suites.
 ```
 
-- Start your app
+✔  Start the application
 ```
 npm start
 ```
 
-- Hit the loading screen
+✔  Hit the loading screen
 ```
 http://localhost:3000/
 ```
 
 Done! You have successfully set up your app, run your tests locally, and started BattleStax.
-Next, let's set up your production deployment process with Netlify.
-
 
 [==> Move to the next section: **Create a REST API**](./README_step01.md)
