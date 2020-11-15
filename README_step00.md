@@ -143,13 +143,13 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 Here is the list of tools you need:
 - [NodeJS 12.x+](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- An IDE like [Visual Studio Code](#https://code.visualstudio.com/Download) or [Jetbrain WebStorm](#https://www.jetbrains.com/webstorm/download/#section=mac) or [Atom](#https://atom.io/)
+- An IDE like [Visual Studio Code](https://code.visualstudio.com/Download) or [Jetbrain WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac) or [Atom](https://atom.io/)
 
 
 |**✅ Step 6a. Clone the repository**![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>Click to view the solution</i></summary><br/> ✔  Clone **_your_** `BattleStax` repository to localhost, use the following command in your terminal to do so:<br/>`git clone git@github.com:[your_github_id]/battlestax.git`<br/><br/>✔  Move to the proper directory<br/>`cd battlestax`<br/><details/>|
+|<details><summary><i>Click to view the solution</i></summary><br/> ✔  Clone **_your_** `BattleStax` repository to localhost, use the following command in your terminal to do so:<br/>`git clone git@github.com:[your_github_id]/battlestax.git`<br/><br/>✔  Move to the proper directory<br/>`cd battlestax`<br/></details>|
 
 |**✅ Step 6b. Define environment variables**![.](./tutorial/line.png?raw=true)|
 |:---|
@@ -166,4 +166,4 @@ Here is the list of tools you need:
 ||
 |<details><summary><i>Click to view the solution</i></summary><br/>✔  Start the application<br/>`npm start`<br/><br/>✔ Hit the loading screen<br/>`http://localhost:3000/`<br/>![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)<br/><br/>**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.<br/><br/>![Netlify Setup Example](./tutorial/well-done.png?raw=true)</details>|
 
-[==> Move to the next section: **Create a REST API**](./README_step01.md)
+[==> Next section: **Create a REST API**](./README_step01.md)
