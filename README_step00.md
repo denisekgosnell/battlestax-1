@@ -16,8 +16,8 @@ This is arguably the biggest step in the whole workshop. Once you get your tools
 2. [Setup your `Astra` instance (database)](#2-create-your-astra-instance)
 3. [Setup your `Netlify` account](#3-setup-netlify-account)
 4. [Setup CI/CD between github and Netlify](#4-setup-for-production-cicd)
-5. [Setup your cloud-based `GITPOD` development environment](#5-configure-your-ide)
-6. [Setup your `LOCAL` development environment](#5-configure-your-ide)
+5. [Setup your cloud-based `GITPOD` development environment](#5-setup-your-cloud-based-gitpod-development-environment)
+6. [Setup your `LOCAL` development environment](##6-setup-your-local-development-environment)
 
 
 ## 1. Create your `BattleStax` repository
@@ -104,19 +104,12 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 
 ## 5. Setup your cloud-based GITPOD development environment
 
-*To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. Here we explain the Gitpod way.
+*To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. Here we explain the Gitpod way.*
 
-**✅ Step 5a: Launch gitpod**
-
-✔  Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. To initialize your environment click on the button below (CTRL + Click to open in new tab)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
-
-You need to authenticate with your github account but then gipod will initialized you workspace, building the solution. Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance.
-
-```diff
-! Autosave is not enabled by default on gitpod
-```
+|**✅ Step 5a: Launch gitpod**br/>![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/> ✔  Gitpod is a cloud based IDE based on Eclipse Theia very similar to VSCode. You need to authenticate with your github account but then gipod will initialized you workspace, building the solution.<br/><br/>To initialize your environment click on the button below (CTRL + Click to open in new tab)<br/>[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)<br/><br/>Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance.<br/>![Netlify Setup Example](./tutorial/gitpod-welcome.png?raw=true)<br/>|
 
 **✅ Step 5b. Define environment variables**
 
@@ -136,6 +129,9 @@ ASTRA_DB_REGION=[cf bloc 3b]
 GAMES_COLLECTION=games
 ```
 
+![Netlify Setup Example](./tutorial/gitpod-env.png?raw=true)
+
+
 **✅ Step 5c. Run the Tests**
 
 ✔ At initialization gitpod has download dependencies already (you should have the `node_modules` folder already there. Still, check dependencies are installed with :
@@ -148,7 +144,6 @@ npm install
 npm test
 ```
 
-**Expected output**
 
 
 **✅ Step 5d. Start the application**
@@ -166,8 +161,6 @@ http://localhost:3000/
 ![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)
 
 **Done!** You have successfully set up your app, run your tests locally, and started BattleStax.
-
-![Netlify Setup Example](./tutorial/well-done.png?raw=true)
 
 ### [🔝](#%EF%B8%8F-table-of-contents)
 
