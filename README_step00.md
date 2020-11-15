@@ -124,19 +124,26 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 
 ## 5. Configure your IDE
 
-To code during this workshop you can either use your laptop or we will provide you an IDE in the cloud.
+To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named [Gitpod](gitpod.io) with everything installed. For screenshots and live demo the team will use gitpod.
 
-**✅ Step 5a Open gitpod IDE :**
+**✅ Step 5a:  Setup your coding env with GITPOD :**
 
-Gitpod is an IDE 100% online based on Eclipse Theia. To initialize your environment simply click on the button below (CTRL + Click to open in new tab)
+<details>
+ <summary><i>Click to view the solution</i></summary>
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#from-referrer/)
+<br/>
+✔  Gitpod is an IDE 100% online based on Eclipse Theia. To initialize your environment simply click on the button below (CTRL + Click to open in new tab)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 Target url looks like `https://<your_uid>.<your_region>.gitpod.io/#/workspace/battlestax`. These URL's are dynamic and we cannot provide clickable links in advance. 
 
 **That's it.** Gitpod provides all tools we will need today including Maven,Pip,Npm. At initialization of the workspace we schedule a command to download dependencies.
 
-**✅ Step 5b Work locally :**
+</details>
+<br/>
+
+**✅ Step 5a : Setup your coding env on your laptop :**
 
 ### Prerequisites
 
