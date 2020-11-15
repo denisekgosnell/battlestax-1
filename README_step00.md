@@ -136,60 +136,30 @@ After each commit a workshow is initialized to BUILD your project, EXECUTE tests
 *To code during the workshop you can either use **your laptop** or a **Cloud-based IDE** named Gitpod. Here we explain how to work locally.*
 
 ```diff
-+ Information : We assume people working locally are not beginner and autonomous. to install a development environment. Here are describe the configuration steps.
++ Information : We assume people working locally are not beginners
++ They should be autonomous to install a development environment.
 ```
-
-**✅ Step 6a. Install Prerequisites tools**
 
 Here is the list of tools you need:
-
 - [NodeJS 12.x+](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- An IDE like [Visual Studio Code](#https://code.visualstudio.com/Download), [Jetbrain WebStorm](#https://www.jetbrains.com/webstorm/download/#section=mac) or [Atom](#https://atom.io/)
+- An IDE like [Visual Studio Code](#https://code.visualstudio.com/Download) or [Jetbrain WebStorm](#https://www.jetbrains.com/webstorm/download/#section=mac) or [Atom](#https://atom.io/)
 
 
-**✅ Step 6b. Clone the repository**
+|**✅ Step 6a. Clone the repository**![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/> ✔  Clone **_your_** `BattleStax` repository to localhost, use the following command in your terminal to do so:<br/>`git clone git@github.com:[your_github_id]/battlestax.git`<br/><br/>✔  Move to the proper directory<br/>`cd battlestax`<br/><details/>|
 
-✔  Clone **_your_** `BattleStax` repository to localhost, use the following command in your terminal to do so:
+|**✅ Step 6b. Define environment variables**![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/>✔  Copy and paste the contents of the `.env.template` file into an `.env` file:<br/>`cp .env.template .env`<br/><br/>✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:<br/>`ASTRA_DB_USERNAME=battle_user`<br/>`ASTRA_DB_PASSWORD=battle_password1`<br/>`ASTRA_DB_KEYSPACE=battlestax`<br/>`ASTRA_DB_ID=[cf bloc 3b]`<br/>`ASTRA_DB_REGION=[cf bloc 3b]`<br/>`GAMES_COLLECTION=games`</details>|
 
-```bash
-git clone git@github.com:[your_github_id]/battlestax.git
-```
-
-✔  Move to the proper directory
-```bash
-cd battlestax
-```
-
-**✅ Step 6c. Define environment variables**
-
-✔  Copy and paste the contents of the `.env.template` file into an `.env` file:
-```bash
-cp .env.template .env
-```
-
-✔ The `.env` file allows us to customize our own environmental variables. We set our Astra credential to env variable, which are outside of our program. Fill in the `.env` file variables with the Astra variables you made a copy of earlier:
-
-```ini
-ASTRA_DB_USERNAME=battle_user
-ASTRA_DB_PASSWORD=battle_password1
-ASTRA_DB_KEYSPACE=battlestax
-ASTRA_DB_ID=[cf bloc 3b]
-ASTRA_DB_REGION=[cf bloc 3b]
-GAMES_COLLECTION=games
-```
-
-**✅ Step 6d. Run the Tests**
-
-✔ Install Battlestax Dependencies. These are specified in the `package.json` file.
-```
-npm install
-```
-
-✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.
-```
-npm test
-```
+|**✅ Step 6d. Run the Tests**![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/>✔ Install Battlestax Dependencies. These are specified in the `package.json` file.<br/>`npm install`<br/><br/>✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.<br/>`npm test`<br/></details>|
 
 **Expected output**
 ```bash
