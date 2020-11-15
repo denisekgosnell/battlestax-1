@@ -159,42 +159,11 @@ Here is the list of tools you need:
 |**✅ Step 6d. Run the Tests**![.](./tutorial/line.png?raw=true)|
 |:---|
 ||
-|<details><summary><i>Click to view the solution</i></summary><br/>✔ Install Battlestax Dependencies. These are specified in the `package.json` file.<br/>`npm install`<br/><br/>✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.<br/>`npm test`<br/></details>|
+|<details><summary><i>Click to view the solution</i></summary><br/>✔ Install Battlestax Dependencies. These are specified in the `package.json` file.<br/>`npm install`<br/><br/>✔ Run the provided test on the master branch. The behavior of `npm test` is also specified in the package.json file.<br/><br/>`npm test`<br/>![Netlify Setup Example](./tutorial/local-test.png?raw=true)</details>|
 
-**Expected output**
-```bash
-$battlestax> npm test
-
-> battlestax-tutorial@0.0.1 test /Users/cedricklunven/dev/WORKSPACES/DATASTAX/JS/battlestax-clun/battlestax
-> CI=true react-scripts test
-
-PASS src/store/gameSlice.test.js
-PASS src/pages/lobby/NewGame/NewGame.test.js
-PASS src/components/App/App.test.js
-
-Test Suites: 3 passed, 3 total
-Tests:       4 passed, 4 total
-Snapshots:   0 total
-Time:        4.177s
-Ran all test suites.
-```
-
-**✅ Step 6e. Start the application**
-
-✔  Start the application
-```bash
-npm start
-```
-
-✔  Hit the loading screen
-```
-http://localhost:3000/
-```
-
-![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)
-
-**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.
-
-![Netlify Setup Example](./tutorial/well-done.png?raw=true)
+|**✅ Step 6e. Start the application**![.](./tutorial/line.png?raw=true)|
+|:---|
+||
+|<details><summary><i>Click to view the solution</i></summary><br/>✔  Start the application<br/>`npm start`<br/><br/>✔ Hit the loading screen<br/>`http://localhost:3000/`<br/>![Netlify Setup Example](./tutorial/start-localhost.png?raw=true)<br/><br/>**Done!** You have successfully set up your app, run your tests locally, and started BattleStax.<br/><br/>![Netlify Setup Example](./tutorial/well-done.png?raw=true)</details>|
 
 [==> Move to the next section: **Create a REST API**](./README_step01.md)
