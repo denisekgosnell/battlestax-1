@@ -1,13 +1,16 @@
-# 03. Create client State
+# 04. Test your client State
 
 [![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
 [![Actions Status](https://github.com/DataStax-Academy/battlestax/workflows/BattleStax%20Tests/badge.svg)](https://github.com/DataStax-Academy/battlestax/actions) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e265340f-c6a6-4d7b-b24c-438b87c67876/deploy-status)](https://app.netlify.com/sites/battlestax-tutorial/deploys)
 
-[🏠 <--Back to Table of Contents](./README.md#table-of-contents)
+[🏠 Back to [Table of Contents](./README.md#table-of-contents)]
 
-[<--Go back to Create a REST API](./README_step02.md)
+* [Part1 - [Setup environment and tools](./README_step00.md)]
+* [Part2 - [Create a REST API with netlify](./README_step01.md)]
+* [Part3 - [Connect to ASTRA](./README_step02.md)]
+* [Part34- [Create Client state](./README_step03.md)]
 
 ### Objectives
 Redux Tool Kit (RTK) tremendously simplifies using Redux, elminating most of the issues most people have when using it (boilerplate code, etc). We will use RTK for state management on the Client and see how it is working with Astra. We will: 
@@ -79,5 +82,5 @@ Lets discuss some of the parameters in `createSlice`.
 `name` - A string name for this slice of state. Generated action type constants will use this as a prefix.
 `reducers` - An object containing Redux "case reducer" functions (functions intended to handle a specific action type.)
 
-[Go to Test your client State -->](./README_step04.md)
+[Go to Create your StoryBookUI -->](./README_step05.md)
 
