@@ -5,9 +5,11 @@
 [![Actions Status](https://github.com/DataStax-Academy/battlestax/workflows/BattleStax%20Tests/badge.svg)](https://github.com/DataStax-Academy/battlestax/actions) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e265340f-c6a6-4d7b-b24c-438b87c67876/deploy-status)](https://app.netlify.com/sites/battlestax-tutorial/deploys)
 
-[🏠 <--Back to Table of Contents](./README.md#table-of-contents)
+[🏠 Back to [Table of Contents](./README.md#table-of-contents)]
 
-[<--Go back to Create a REST API](./README_step02.md)
+* [Part1 - [Setup environment and tools](./README_step00.md)]
+* [Part2 - [Create a REST API with netlify](./README_step01.md)]
+* [Part3 - [Connect to ASTRA](./README_step02.md)]
 
 ### Objectives
 Redux Tool Kit (RTK) tremendously simplifies using Redux, elminating most of the issues most people have when using it (boilerplate code, etc). We will use RTK for state management on the Client and see how it is working with Astra. We will: 

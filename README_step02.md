@@ -10,7 +10,6 @@
 * [Part1 - [Setup environment and tools](./README_step00.md)]
 * [Part2 - [Create a REST API with netlify](./README_step01.md)]
 
-
 ## 1. Creating the `insertGame` endpoint
 
 See the complete code solution [here](https://github.com/beccam/battlestax-tutorial/blob/step-2-solution/functions/insertGame.js)

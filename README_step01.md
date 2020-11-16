@@ -152,5 +152,5 @@ Run the functions test that you have written:
 
 This will fail, as we have not written our API endpoint just yet. Your are set, let unmock this API
 
-[Go to Connect your Astra database -->](./README_step02.md)
+[Connect your Astra database -->](./README_step02.md)
 
